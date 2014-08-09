@@ -1,8 +1,8 @@
 package drugExpertSystem.controller.substancePropertyController;
 
 import drugExpertSystem.substance.Entity.substanceProperty.Solubility;
-import drugExpertSystem.substance.Service.substancePropertyService.SolidstateService;
-import drugExpertSystem.substance.Service.substancePropertyService.SolubilityService;
+//import drugExpertSystem.substance.Service.substancePropertyService.SolidstateService;
+//import drugExpertSystem.substance.Service.substancePropertyService.SolubilityService;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/solubility")
 public class SolubilityController {
-
+/*
     @Autowired
     SolubilityService solubilityService;
 

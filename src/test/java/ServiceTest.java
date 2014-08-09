@@ -3,9 +3,9 @@ import drugExpertSystem.formulation.TabletFormulation;
 import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import drugExpertSystem.substance.Entity.substanceProperty.*;
-import drugExpertSystem.substance.Service.substanceFunctionService.CompoundFunctionServiceImpl;
-import drugExpertSystem.substance.Service.substancePropertyService.*;
-import drugExpertSystem.substance.repository.SolubilityRepository;
+//import drugExpertSystem.substance.Service.substanceFunctionService.CompoundFunctionServiceImpl;
+//import drugExpertSystem.substance.Service.substancePropertyService.*;
+//import drugExpertSystem.substance.repository.SolubilityRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
  * Created by narongrit saisuwan on 7/4/2014.
  */
 public class ServiceTest {
-
+/*
     @Mock
     SolubilityServiceImpl solubilityService;
   SolidstateServiceImpl solidstateService;

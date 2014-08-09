@@ -3,9 +3,9 @@ package drugExpertSystem.substance.Entity.SubstancePackage;
 
 import drugExpertSystem.substance.Entity.substanceProperty.*;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
 
 
 @Document
@@ -13,128 +13,26 @@ public class Substance{
     @Id
     long id;
     String name;
-    @DBRef
-    Solubility watersolubilityproperty;
+    Solubility watersolubility;
+    List stability;
+    float pka;
+    float partitionCoefficient;
+    String solidstate;
+    Hygroscopicity hygroscopicity;
+    ParticleSize particleSize;
+    Solubility alcoholSolubility;
+    Flowability flowability;
+    float density;
+    String saltForm;
+    float mocularWeight;
 
-    Stability stabilityproperty ;
-    @DBRef
-    Pka dissolutionproperty;
-    @DBRef
-    PartitionCoefficient partitioncoefficientproperty;
-    @DBRef
-    Solidstate physicalformproperty;
-    @DBRef
-    Hygroscopicity hygroscopicityproperty;
-    @DBRef
-    ParticleSize particleproperty;
-    @DBRef
-    Solubility alcoholsolubilityproperty;
-    @DBRef
-    Flowability flowabilityproperty;
 
-    @DBRef
-    Density powderdensityproperty;
-
-    SaltForm saltproperty;
-
-    float weightproperty;
-    String lonicity;
-
-    public Solubility getWatersolubilityproperty() {
-        return watersolubilityproperty;
+    public long getId() {
+        return id;
     }
 
-    public void setWatersolubilityproperty(Solubility watersolubilityproperty) {
-        this.watersolubilityproperty = watersolubilityproperty;
-    }
-
-    public Stability getStabilityproperty() {
-        return stabilityproperty;
-    }
-
-    public void setStabilityproperty(Stability stabilityproperty) {
-        this.stabilityproperty = stabilityproperty;
-    }
-
-    public Pka getDissolutionproperty() {
-        return dissolutionproperty;
-    }
-
-    public void setDissolutionproperty(Pka dissolutionproperty) {
-        this.dissolutionproperty = dissolutionproperty;
-    }
-
-    public PartitionCoefficient getPartitioncoefficientproperty() {
-        return partitioncoefficientproperty;
-    }
-
-    public void setPartitioncoefficientproperty(PartitionCoefficient partitioncoefficientproperty) {
-        this.partitioncoefficientproperty = partitioncoefficientproperty;
-    }
-
-    public Solidstate getPhysicalformproperty() {
-        return physicalformproperty;
-    }
-
-    public void setPhysicalformproperty(Solidstate physicalformproperty) {
-        this.physicalformproperty = physicalformproperty;
-    }
-
-    public Hygroscopicity getHygroscopicityproperty() {
-        return hygroscopicityproperty;
-    }
-
-    public void setHygroscopicityproperty(Hygroscopicity hygroscopicityproperty) {
-        this.hygroscopicityproperty = hygroscopicityproperty;
-    }
-
-    public ParticleSize getParticleproperty() {
-        return particleproperty;
-    }
-
-    public void setParticleproperty(ParticleSize particleproperty) {
-        this.particleproperty = particleproperty;
-    }
-
-    public Solubility getAlcoholsolubilityproperty() {
-        return alcoholsolubilityproperty;
-    }
-
-    public void setAlcoholsolubilityproperty(Solubility alcoholsolubilityproperty) {
-        this.alcoholsolubilityproperty = alcoholsolubilityproperty;
-    }
-
-    public Flowability getFlowabilityproperty() {
-        return flowabilityproperty;
-    }
-
-    public void setFlowabilityproperty(Flowability flowabilityproperty) {
-        this.flowabilityproperty = flowabilityproperty;
-    }
-
-
-    public Density getPowderdensityproperty() {
-        return powderdensityproperty;
-    }
-
-    public void setPowderdensityproperty(Density powderdensityproperty) {
-        this.powderdensityproperty = powderdensityproperty;
-    }
-
-    public SaltForm getSaltproperty() {
-        return saltproperty;
-    }
-
-    public void setSaltproperty(SaltForm saltproperty) {
-        this.saltproperty = saltproperty;
-    }
-
-    public float getWeightproperty() {
-        return weightproperty;
-    }
-
-    public void setWeightproperty(float weightproperty) {
-        this.weightproperty = weightproperty;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -145,19 +43,99 @@ public class Substance{
         this.name = name;
     }
 
-    public long getId() {
-        return id;
+    public Solubility getWatersolubility() {
+        return watersolubility;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setWatersolubility(Solubility watersolubility) {
+        this.watersolubility = watersolubility;
     }
 
-    public String getLonicity() {
-        return lonicity;
+    public List getStability() {
+        return stability;
     }
 
-    public void setLonicity(String lonicity) {
-        this.lonicity = lonicity;
+    public void setStability(List stability) {
+        this.stability = stability;
+    }
+
+    public float getPka() {
+        return pka;
+    }
+
+    public void setPka(float pka) {
+        this.pka = pka;
+    }
+
+    public float getPartitionCoefficient() {
+        return partitionCoefficient;
+    }
+
+    public void setPartitionCoefficient(float partitionCoefficient) {
+        this.partitionCoefficient = partitionCoefficient;
+    }
+
+    public String getSolidstate() {
+        return solidstate;
+    }
+
+    public void setSolidstate(String solidstate) {
+        this.solidstate = solidstate;
+    }
+
+    public Hygroscopicity getHygroscopicity() {
+        return hygroscopicity;
+    }
+
+    public void setHygroscopicity(Hygroscopicity hygroscopicity) {
+        this.hygroscopicity = hygroscopicity;
+    }
+
+    public ParticleSize getParticleSize() {
+        return particleSize;
+    }
+
+    public void setParticleSize(ParticleSize particleSize) {
+        this.particleSize = particleSize;
+    }
+
+    public Solubility getAlcoholSolubility() {
+        return alcoholSolubility;
+    }
+
+    public void setAlcoholSolubility(Solubility alcoholSolubility) {
+        this.alcoholSolubility = alcoholSolubility;
+    }
+
+    public Flowability getFlowability() {
+        return flowability;
+    }
+
+    public void setFlowability(Flowability flowability) {
+        this.flowability = flowability;
+    }
+
+    public float getDensity() {
+        return density;
+    }
+
+    public void setDensity(float density) {
+        this.density = density;
+    }
+
+    public String getSaltForm() {
+        return saltForm;
+    }
+
+    public void setSaltForm(String saltForm) {
+        this.saltForm = saltForm;
+    }
+
+    public float getMocularWeight() {
+        return mocularWeight;
+    }
+
+    public void setMocularWeight(float mocularWeight) {
+        this.mocularWeight = mocularWeight;
     }
 }

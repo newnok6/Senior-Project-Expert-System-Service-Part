@@ -1,10 +1,25 @@
 package drugExpertSystem.substance.Entity.substanceProperty;
 
+/**
+ * Created by Panupak on 8/9/2014.
+ */
+public enum Solubility {
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+    PRACTICALLY("PracticallyInsoluble"),
+    VERY("VerySoluble"),
+    SLIGHTLY("SlightlySoluble"),
+    SPARING("SparinglySoluble"),
+    Soluble("Soluble"),
+    VERYSLIGHTLY("VerySlightlySoluble"),
+    FREELY("FreelySoluble");
 
-@Document
-public class Solubility{
-  
+    private String solubilityType;
+
+    Solubility(String solubilityType) {
+        this.solubilityType = solubilityType;
+    }
+
+    public String getSolubilityType() {
+        return solubilityType;
+    }
 }

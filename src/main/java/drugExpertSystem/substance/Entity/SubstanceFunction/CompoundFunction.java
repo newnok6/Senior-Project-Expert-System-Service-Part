@@ -9,8 +9,6 @@ public class CompoundFunction{
     @Id
     long id;
     String type;
-    float maxconcentrationproperty;
-    float minconcentrationproperty;
 
     public long getId() {
         return id;
@@ -28,21 +26,7 @@ public class CompoundFunction{
         this.type = type;
     }
 
-    public float getMaxconcentrationproperty() {
-        return this.maxconcentrationproperty;
-    }
 
-    public void setMaxconcentrationproperty(float maxconcentrationproperty) {
-        this.maxconcentrationproperty = maxconcentrationproperty;
-    }
-
-    public float getMinconcentrationproperty() {
-        return this.minconcentrationproperty;
-    }
-
-    public void setMinconcentrationproperty(float minconcentrationproperty) {
-        this.minconcentrationproperty = minconcentrationproperty;
-    }
 
 
 
