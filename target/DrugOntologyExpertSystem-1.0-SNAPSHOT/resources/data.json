@@ -1,0 +1,5 @@
+[ { "_class" : "drugExpertSystem.substance.Entity.substanceProperty.Solubility",
+    "_id" : "1",
+    "type" : "FreelySoluble",
+    "value" : "4.56"}
+]

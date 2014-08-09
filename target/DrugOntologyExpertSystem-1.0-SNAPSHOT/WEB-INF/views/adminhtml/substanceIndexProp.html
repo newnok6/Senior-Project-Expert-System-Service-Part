@@ -1,0 +1,75 @@
+
+<div class="off-canvas-wrap">
+
+    <div class="inner-wrap">
+
+
+        <nav class="tab-bar">
+
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <h1 class="title"><a class="showData" href="#"> Exipient Property></a></h1>
+            </section>
+
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Excipient Property</label></li>
+                <li><a class="solubility" href="#solubilityForm">Solubility</a></li>
+                <li><a class="degradationMechanism" href="#degradationMechanismForm">DegradationMechanism</a></li>
+                <li><a class="kineticReaction" href="#kineticReactionForm">KineticReaction</a></li>
+                <li><a class="pka" href="#pkaForm">Pka</a></li>
+                <li><a class="partitionCoefficient" href="#partitionCoefficientForm">PartitionCoefficient</a></li>
+                <li><a class="solidstate" href="#solidstateForm">Solidstate</a></li>
+                <li><a class="hygroscopicity" href="#hygroscopicityForm">Hygroscopicity</a></li>
+                <li><a class="particleSize" href="#particleSizeForm">ParticleSize</a></li>
+                <li><a class="flowAbility" href="#flowAbilityForm">FlowAbility</a></li>
+                <li><a class="density" href="#densityForm">Density</a></li>
+
+                <li><label>CompoundFunction</label></li>
+                <li><a class="compoundFunction" href="#compoundFunctionForm">CompoundFunction</a></li>
+
+
+            </ul>
+        </aside>
+        <section class="main-section">
+            <div class="section-inner">
+
+                <div id="showAllProperty" class="scroll-contrainer">
+                    <h2>Substance Property Data</h2>
+
+
+                    <!-- Show the Solubility in the database on the table ---->
+                    <p><a name="Show Solubility Data"></a></p>
+
+                    <h3 data-magellan-destination="showSolubility">Solubility Data</h3>
+                    <div></div>
+                    <table ng-show="solubilities.length > 0">
+
+                        <thead>
+
+                        <tr>
+                            <th width="200">Solubility Type</th>
+                            <th width="200">Solubility Value</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="solubility in solubilities">
+                            <td>{{solubility.type}}</td>
+                            <td>{{solubility.value}}</td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <!----------------------------------------------------------->
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
