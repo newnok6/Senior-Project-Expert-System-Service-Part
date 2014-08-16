@@ -28,14 +28,22 @@ public class SolubilityServiceImpl implements SolubilityService {
 
     @Override
     @Transactional
-    public void add() {
-       List<Solubility> solubilityList = new ArrayList<Solubility>();
+    public Solubility add(Solubility solubility) {
+        solubility.setId(sequenceDao.getNextSequenceId("solubility"));
+        solubilityRepository.save(solubility);
 
-       solubilityRepository.save(new Solubility(1,"Testing",1));
-       solubilityRepository.save(new Solubility(2,"Testing",2));
+        try{
+            this.getByID(solubility.getId());
+        }catch (Exception e){
+            return null;
+        }
 
+        return solubility;
 
     }
+
+
+
 
     @Override
     @Transactional

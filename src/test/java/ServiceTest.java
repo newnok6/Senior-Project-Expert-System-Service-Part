@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
  * Created by narongrit saisuwan on 7/4/2014.
  */
 public class ServiceTest {
-
+/*
     @Mock
     SolubilityServiceImpl solubilityService;
   SolidstateServiceImpl solidstateService;
