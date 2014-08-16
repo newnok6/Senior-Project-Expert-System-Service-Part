@@ -3,6 +3,7 @@ package drugExpertSystem.controller;
 
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import drugExpertSystem.substance.Entity.substanceProperty.Solubility;
+import drugExpertSystem.substance.Entity.substanceProperty.SolubilityContrainer;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,9 +20,12 @@ import java.util.List;
 public class SubstancePropertyController {
 
 
-    @RequestMapping(value = "solubilityList.json",method = RequestMethod.GET)
-    public @ResponseBody Solubility[] getAllSolubility(){
-        return Solubility.values();
+    @RequestMapping(value = "solubilityList",method = RequestMethod.GET)
+    public @ResponseBody
+    SolubilityContrainer getAllSolubility(){
+        SolubilityContrainer solubilityContrainer = new SolubilityContrainer();
+        solubilityContrainer.setSolubilities(Solubility.values());
+        return solubilityContrainer;
     }
 
 
