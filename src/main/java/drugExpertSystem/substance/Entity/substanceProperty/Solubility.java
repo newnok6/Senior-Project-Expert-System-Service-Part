@@ -1,11 +1,6 @@
 package drugExpertSystem.substance.Entity.substanceProperty;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
-/**
- * Created by Panupak on 8/9/2014.
- */
-@JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum Solubility {
 
     PRACTICALLY("PracticallyInsoluble"),
