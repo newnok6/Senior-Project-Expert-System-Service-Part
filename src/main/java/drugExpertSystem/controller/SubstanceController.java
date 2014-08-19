@@ -20,24 +20,24 @@ public class SubstanceController {
 
     @RequestMapping(value = "add-substance",method = RequestMethod.POST)
     public  @ResponseBody
-    void addSolubility(@RequestBody Substance substance){
+    void addSubstance(@RequestBody Substance substance){
         substanceService.addsubstance(substance);
         System.out.println("test");
     }
 
     @RequestMapping(value = "update-substance/{id}",method = RequestMethod.PUT)
-    public  @ResponseBody void updateSolubility(@RequestBody Substance substance){
+    public  @ResponseBody void updateSubstance(@RequestBody Substance substance){
         substanceService.updateSubstance(substance);
     }
 
     @RequestMapping(value = "remove-substance/{id}",method = RequestMethod.DELETE)
-    public  @ResponseBody void deleteSolubility(@PathVariable("id") Long id){
+    public  @ResponseBody void deleteSubstance(@PathVariable("id") Long id){
         substanceService.deleteSubstance(substanceService.getSubstanceById(id));
     }
 
     @RequestMapping(value = "substanceList.json",method = RequestMethod.GET)
     public @ResponseBody
-    List<Substance> getAllSolubility(){
+    List<Substance> getAllSubstance(){
         return substanceService.getAllSubstance();
     }
 
