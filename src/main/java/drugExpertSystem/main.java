@@ -3,6 +3,8 @@ package drugExpertSystem;
 
 import drugExpertSystem.substance.Entity.SubstanceFunction.BiderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
+import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +14,8 @@ import java.util.List;
  */
 public class main {
     public static void main (String[] args ){
+        SubstanceService substanceService = null;
+
         List<CompoundFunction> compoundFunctions = new ArrayList<CompoundFunction>();
        // BiderFunction bider = new BiderFunction(1,"Testing");
         //compoundFunctions.add(bider);

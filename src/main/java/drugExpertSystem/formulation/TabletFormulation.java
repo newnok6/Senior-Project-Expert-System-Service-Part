@@ -13,10 +13,7 @@ import java.util.List;
 public class TabletFormulation {
     @Id
     long id;
-
-    String name;
-
-    List<Excipient> excipients;
+    List<Excipient> binder;
 
     public long getId() {
         return id;
@@ -26,19 +23,11 @@ public class TabletFormulation {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public List<Excipient> getBinder() {
+        return binder;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Excipient> getExcipients() {
-        return excipients;
-    }
-
-    public void setExcipients(List<Excipient> excipients) {
-        this.excipients = excipients;
+    public void setBinder(List<Excipient> binder) {
+        this.binder = binder;
     }
 }

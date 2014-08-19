@@ -20,13 +20,9 @@ public class Excipient {
     @DBRef
     Substance substance;
 
-    List<CompoundFunction> compoundFunctions;
-
-
-    int quantity;
-
-
-    float intensity;
+    float minWeight;
+    float maxWeight;
+    float usedWeight;
 
     public long getId() {
         return id;
@@ -44,27 +40,27 @@ public class Excipient {
         this.substance = substance;
     }
 
-    public List<CompoundFunction> getCompoundFunctions() {
-        return compoundFunctions;
+    public float getMinWeight() {
+        return minWeight;
     }
 
-    public void setCompoundFunctions(List<CompoundFunction> compoundFunctions) {
-        this.compoundFunctions = compoundFunctions;
+    public void setMinWeight(float minWeight) {
+        this.minWeight = minWeight;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public float getMaxWeight() {
+        return maxWeight;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setMaxWeight(float maxWeight) {
+        this.maxWeight = maxWeight;
     }
 
-    public float getIntensity() {
-        return intensity;
+    public float getUsedWeight() {
+        return usedWeight;
     }
 
-    public void setIntensity(float intensity) {
-        this.intensity = intensity;
+    public void setUsedWeight(float usedWeight) {
+        this.usedWeight = usedWeight;
     }
 }

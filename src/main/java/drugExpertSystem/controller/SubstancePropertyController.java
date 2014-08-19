@@ -21,9 +21,9 @@ public class SubstancePropertyController {
 
 
     @RequestMapping(value = "solubilityList",method = RequestMethod.GET)
-    public @ResponseBody
-    Solubility[] getAllSolubility(){
-       return Solubility.values();
+        public @ResponseBody
+        Solubility[] getAllSolubility(){
+            return Solubility.values();
 
     }
 

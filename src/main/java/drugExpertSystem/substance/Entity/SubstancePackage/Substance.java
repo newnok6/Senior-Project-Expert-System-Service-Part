@@ -13,7 +13,7 @@ public class Substance{
     @Id
     long id;
     String name;
-    Solubility watersolubility;
+    String watersolubility;
     List stability;
     float pka;
     float partitionCoefficient;
@@ -43,11 +43,11 @@ public class Substance{
         this.name = name;
     }
 
-    public Solubility getWatersolubility() {
+    public String getWatersolubility() {
         return watersolubility;
     }
 
-    public void setWatersolubility(Solubility watersolubility) {
+    public void setWatersolubility(String watersolubility) {
         this.watersolubility = watersolubility;
     }
 
