@@ -1,12 +1,14 @@
 package drugExpertSystem.formulation;
 
 import drugExpertSystem.excipient.Excipient;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
 /**
  * Created by Panupak on 8/19/2014.
  */
+@Document
 public class Formulation {
     long id;
     List<Excipient> api;

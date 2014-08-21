@@ -2,6 +2,7 @@ package drugExpertSystem.formulation.Services;
 
 import drugExpertSystem.formulation.Formulation;
 import drugExpertSystem.formulation.Repository.FormulationRepository;
+import drugExpertSystem.substance.DAO.SequeceNumber.SequenceDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,15 +17,30 @@ public class FormulationServiceImpl implements FormulationService {
     @Autowired
     FormulationRepository formulationRepository;
 
+    @Autowired
+    SequenceDao sequenceDao;
 
     @Override
     public Formulation addFormulation(Formulation formulation) {
-        return null;
+        formulation.setId(sequenceDao.getNextSequenceId("formulation"));
+        formulationRepository.save(formulation);
+        try{
+            this.getFormulationById(formulation.getId());
+        }catch (Exception e){
+            return null;
+        }
+        return formulation;
     }
 
     @Override
     public Formulation updateFormulation(Formulation formulation) {
-        return null;
+        formulationRepository.save(formulation);
+        try{
+            this.getFormulationById(formulation.getId());
+        }catch (Exception e){
+            return null;
+        }
+        return formulation;
     }
 
     @Override
@@ -34,16 +50,14 @@ public class FormulationServiceImpl implements FormulationService {
 
     @Override
     public List getAllFormulation() {
-        return null;
+        return formulationRepository.findAll();
     }
 
     @Override
     public Formulation getFormulationById(long id) {
-        return null;
+
+        return formulationRepository.findById(id);
     }
 
-    @Override
-    public Formulation getFormulationByName(String name) {
-        return null;
-    }
+
 }

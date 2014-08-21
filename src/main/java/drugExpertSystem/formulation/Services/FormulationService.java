@@ -14,5 +14,5 @@ public interface FormulationService <T extends Formulation> {
     public T deleteFormulation(T t);
     public List<T> getAllFormulation();
     public T getFormulationById(long id);
-    public T getFormulationByName(String name);
+
 }

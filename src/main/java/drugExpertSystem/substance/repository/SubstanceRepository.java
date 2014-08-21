@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 /**
  * Created by Panupak on 6/8/2014.
  */
-@RepositoryRestResource(collectionResourceRel = "Substance")
+@Repository
 public interface SubstanceRepository extends MongoRepository<Substance,String> {
     Substance findById(long id);
     Substance findByName(String name);
