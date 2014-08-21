@@ -42,6 +42,8 @@
             <version>4.0.5.RELEASE</version>
         </dependency>
 
+
+
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
@@ -68,7 +70,11 @@
             <version>1.4.2.RELEASE</version>
         </dependency>
 
-
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-rest-webmvc</artifactId>
+                <version>2.1.2.RELEASE</version>
+            </dependency>
 
         <dependency>
             <groupId>commons-pool</groupId>
@@ -136,9 +142,6 @@
             <artifactId>spring-oxm</artifactId>
             <version>1.5.10</version>
         </dependency>
-
-
-
 
 
 

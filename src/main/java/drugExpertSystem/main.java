@@ -5,6 +5,7 @@ import drugExpertSystem.substance.Entity.SubstanceFunction.BiderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +15,9 @@ import java.util.List;
  */
 public class main {
     public static void main (String[] args ){
-        SubstanceService substanceService = null;
 
+
+        SubstanceService substanceService;
         List<CompoundFunction> compoundFunctions = new ArrayList<CompoundFunction>();
        // BiderFunction bider = new BiderFunction(1,"Testing");
         //compoundFunctions.add(bider);

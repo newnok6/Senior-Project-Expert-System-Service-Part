@@ -3,12 +3,10 @@ package drugExpertSystem.substance.Entity.SubstancePackage;
 
 import drugExpertSystem.substance.Entity.substanceProperty.*;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.List;
 
 
-@Document
+
 public class Substance{
     @Id
     long id;
@@ -18,9 +16,9 @@ public class Substance{
     float pka;
     float partitionCoefficient;
     String solidstate;
-    Hygroscopicity hygroscopicity;
-    ParticleSize particleSize;
-    Solubility alcoholSolubility;
+    String hygroscopicity;
+    String particleSize;
+    String alcoholSolubility;
     Flowability flowability;
     float density;
     String saltForm;
@@ -83,27 +81,27 @@ public class Substance{
         this.solidstate = solidstate;
     }
 
-    public Hygroscopicity getHygroscopicity() {
+    public String getHygroscopicity() {
         return hygroscopicity;
     }
 
-    public void setHygroscopicity(Hygroscopicity hygroscopicity) {
+    public void setHygroscopicity(String hygroscopicity) {
         this.hygroscopicity = hygroscopicity;
     }
 
-    public ParticleSize getParticleSize() {
+    public String getParticleSize() {
         return particleSize;
     }
 
-    public void setParticleSize(ParticleSize particleSize) {
+    public void setParticleSize(String particleSize) {
         this.particleSize = particleSize;
     }
 
-    public Solubility getAlcoholSolubility() {
+    public String getAlcoholSolubility() {
         return alcoholSolubility;
     }
 
-    public void setAlcoholSolubility(Solubility alcoholSolubility) {
+    public void setAlcoholSolubility(String alcoholSolubility) {
         this.alcoholSolubility = alcoholSolubility;
     }
 

@@ -15,6 +15,7 @@ public class TabletFormulation {
     long id;
     List<Excipient> binder;
 
+
     public long getId() {
         return id;
     }

@@ -11,16 +11,16 @@ import java.util.List;
 /**
  * Created by Panupak on 5/23/2014.
  */
-@Controller
+@RestController
 @RequestMapping("/substance")
 public class SubstanceController {
 
   @Autowired
     SubstanceService substanceService;
 
-    @RequestMapping(value = "add-substance",method = RequestMethod.POST)
-    public  @ResponseBody
-    void addSubstance(@RequestBody Substance substance){
+
+    @RequestMapping(value = "/add-substance",method = RequestMethod.POST)
+    public void addSubstance(@RequestBody Substance substance){
         substanceService.addsubstance(substance);
         System.out.println("test");
     }
@@ -35,9 +35,8 @@ public class SubstanceController {
         substanceService.deleteSubstance(substanceService.getSubstanceById(id));
     }
 
-    @RequestMapping(value = "substanceList.json",method = RequestMethod.GET)
-    public @ResponseBody
-    List<Substance> getAllSubstance(){
+    @RequestMapping(value = "/substanceList.json",method = RequestMethod.GET)
+    public List<Substance> getAllSubstance(){
         return substanceService.getAllSubstance();
     }
 
