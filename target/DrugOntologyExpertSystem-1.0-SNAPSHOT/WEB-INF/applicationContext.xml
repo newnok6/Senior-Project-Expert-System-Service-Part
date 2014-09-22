@@ -53,20 +53,9 @@
     </bean>
 
     <mongo:repositories base-package="drugExpertSystem">
-        <mongo:repository id="solubilityRepository" mongo-template-ref="solubilityTemplate"/>
-        <mongo:repository id="solidstateRepository" mongo-template-ref="solidstateTemplate"/>
-        <mongo:repository id="pkaRepository" mongo-template-ref="pkaTemplate"/>
-        <mongo:repository id="partitionCoefficientRepository" mongo-template-ref="partitionCoefficientTemplate"/>
-        <mongo:repository id="particleSizeRepository" mongo-template-ref="particleSizeTemplate"/>
-        <mongo:repository id="kineticReactionRepository" mongo-template-ref="kineticReactionTemplate"/>
-        <mongo:repository id="flowabilityRepository" mongo-template-ref="flowabilityTemplate"/>
-        <mongo:repository id="degradationMechanismRepository" mongo-template-ref="degradationMechanismTemplate"/>
-        <mongo:repository id="hygroscopicityRepository" mongo-template-ref="hygroscopicityTemplate"/>
-        <mongo:repository id="densityRepository" mongo-template-ref="densityTemplate"/>
         <mongo:repository id="compoundFunctionRepository" mongo-template-ref="compoundFunctionTemplate"/>
         <mongo:repository id="substanceRepository" mongo-template-ref="substanceTemplate"/>
-        <mongo:repository id="excipientRepository" mongo-template-ref="excipientTemplate"/>
-
+        <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
 
     </mongo:repositories>
 

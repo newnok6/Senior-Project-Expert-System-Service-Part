@@ -11,7 +11,7 @@ import java.util.List;
  */
 @Document
 public class TabletFormulation {
-    @Id
+
     long id;
     List<Excipient> binder;
 

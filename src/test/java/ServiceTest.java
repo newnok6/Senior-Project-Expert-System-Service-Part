@@ -1,6 +1,6 @@
 import drugExpertSystem.excipient.Excipient;
-import drugExpertSystem.formulation.TabletFormulation;
-import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
+//import drugExpertSystem.formulation.TabletFormulation;
+//import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import drugExpertSystem.substance.Entity.substanceProperty.*;
 //import drugExpertSystem.substance.Service.substanceFunctionService.CompoundFunctionServiceImpl;

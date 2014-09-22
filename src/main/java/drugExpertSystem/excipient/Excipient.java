@@ -1,11 +1,12 @@
 package drugExpertSystem.excipient;
 
-import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
+
+import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
+
 
 import java.util.List;
 
@@ -19,6 +20,8 @@ public class Excipient {
 
     @DBRef
     Substance substance;
+
+    List<SubstanceFunction> substanceFunctions;
 
     float minWeight;
     float maxWeight;
@@ -62,5 +65,13 @@ public class Excipient {
 
     public void setUsedWeight(float usedWeight) {
         this.usedWeight = usedWeight;
+    }
+
+    public List<SubstanceFunction> getSubstanceFunctions() {
+        return substanceFunctions;
+    }
+
+    public void setSubstanceFunctions(List<SubstanceFunction> substanceFunctions) {
+        this.substanceFunctions = substanceFunctions;
     }
 }

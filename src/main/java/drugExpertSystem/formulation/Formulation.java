@@ -1,6 +1,7 @@
 package drugExpertSystem.formulation;
 
 import drugExpertSystem.excipient.Excipient;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  */
 @Document
 public class Formulation {
+    @Id
     long id;
     List<Excipient> api;
 
