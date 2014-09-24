@@ -22,7 +22,7 @@ public class SubstanceController {
     @RequestMapping(value = "/add-substance",method = RequestMethod.POST)
     public void addSubstance(@RequestBody Substance substance){
         substanceService.addsubstance(substance);
-        System.out.println("test");
+        System.out.println("Substance adding sucessful");
     }
 
     @RequestMapping(value = "update-substance/{id}",method = RequestMethod.PUT)

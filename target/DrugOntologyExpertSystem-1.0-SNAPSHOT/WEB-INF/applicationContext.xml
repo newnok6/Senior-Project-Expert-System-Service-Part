@@ -55,6 +55,7 @@
     <mongo:repositories base-package="drugExpertSystem">
         <mongo:repository id="compoundFunctionRepository" mongo-template-ref="compoundFunctionTemplate"/>
         <mongo:repository id="substanceRepository" mongo-template-ref="substanceTemplate"/>
+        <mongo:repository id="excipientRepository" mongo-template-ref="excipientTemplate"/>
         <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
 
     </mongo:repositories>

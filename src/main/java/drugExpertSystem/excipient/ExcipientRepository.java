@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ExcipientRepository extends MongoRepository<Excipient,String> {
+    Excipient findById(long id);
 
 }

@@ -13,18 +13,19 @@ public class Substance{
     @Id
     long id;
     String name;
-    String watersolubility;
+    String waterSolubility;
     List stability;
     float pka;
     float partitionCoefficient;
-    String solidstate;
+    String solidState;
     String hygroscopicity;
     String particleSize;
     String alcoholSolubility;
-    Flowability flowability;
+    String flowability;
     float density;
     String saltForm;
     float mocularWeight;
+    String ionicity;
 
 
     public long getId() {
@@ -43,12 +44,12 @@ public class Substance{
         this.name = name;
     }
 
-    public String getWatersolubility() {
-        return watersolubility;
+    public String getWaterSolubility() {
+        return waterSolubility;
     }
 
-    public void setWatersolubility(String watersolubility) {
-        this.watersolubility = watersolubility;
+    public void setWaterSolubility(String waterSolubility) {
+        this.waterSolubility = waterSolubility;
     }
 
     public List getStability() {
@@ -75,12 +76,12 @@ public class Substance{
         this.partitionCoefficient = partitionCoefficient;
     }
 
-    public String getSolidstate() {
-        return solidstate;
+    public String getSolidState() {
+        return solidState;
     }
 
-    public void setSolidstate(String solidstate) {
-        this.solidstate = solidstate;
+    public void setSolidState(String solidState) {
+        this.solidState = solidState;
     }
 
     public String getHygroscopicity() {
@@ -107,11 +108,11 @@ public class Substance{
         this.alcoholSolubility = alcoholSolubility;
     }
 
-    public Flowability getFlowability() {
+    public String getFlowability() {
         return flowability;
     }
 
-    public void setFlowability(Flowability flowability) {
+    public void setFlowability(String flowability) {
         this.flowability = flowability;
     }
 
@@ -137,5 +138,13 @@ public class Substance{
 
     public void setMocularWeight(float mocularWeight) {
         this.mocularWeight = mocularWeight;
+    }
+
+    public String getIonicity() {
+        return ionicity;
+    }
+
+    public void setIonicity(String ionicity) {
+        this.ionicity = ionicity;
     }
 }
