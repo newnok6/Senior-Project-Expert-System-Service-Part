@@ -14,4 +14,5 @@ public interface SubstanceService<T extends Substance> {
     public List<T> getAllSubstance();
     public T getSubstanceById(long id);
     public T getSubstanceByName(String name);
+
 }

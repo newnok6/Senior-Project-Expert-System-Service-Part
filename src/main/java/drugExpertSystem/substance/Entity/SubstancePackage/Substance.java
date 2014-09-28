@@ -10,6 +10,8 @@ import java.util.List;
 
 @Document
 public class Substance{
+
+
     @Id
     long id;
     String name;
@@ -26,6 +28,7 @@ public class Substance{
     String saltForm;
     float mocularWeight;
     String ionicity;
+
 
 
     public long getId() {

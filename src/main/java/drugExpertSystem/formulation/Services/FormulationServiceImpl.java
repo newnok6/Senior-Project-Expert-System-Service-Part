@@ -2,6 +2,8 @@ package drugExpertSystem.formulation.Services;
 
 import drugExpertSystem.formulation.Formulation;
 import drugExpertSystem.formulation.Repository.FormulationRepository;
+import drugExpertSystem.formulation.SolutionFormulation;
+import drugExpertSystem.formulation.TabletFormulation;
 import drugExpertSystem.substance.DAO.SequeceNumber.SequenceDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +25,13 @@ public class FormulationServiceImpl implements FormulationService {
     @Override
     public Formulation addFormulation(Formulation formulation) {
         formulation.setId(sequenceDao.getNextSequenceId("formulation"));
-        formulationRepository.save(formulation);
+        /*
+        if(formulation.getType()=="Tablet Formulation"){
+            formulationRepository.save((Iterable<Formulation>) new TabletFormulation());
+        }else{
+            formulationRepository.save((Iterable<Formulation>) new SolutionFormulation());
+        }
+        */
         try{
             this.getFormulationById(formulation.getId());
         }catch (Exception e){

@@ -3,7 +3,6 @@ package drugExpertSystem.controller;
 import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,8 +24,8 @@ public class SubstanceController {
         System.out.println("Substance adding sucessful");
     }
 
-    @RequestMapping(value = "update-substance/{id}",method = RequestMethod.PUT)
-    public  @ResponseBody void updateSubstance(@RequestBody Substance substance){
+    @RequestMapping(value = "update-substance",method = RequestMethod.PUT)
+    public void updateSubstance(@RequestBody Substance substance){
         substanceService.updateSubstance(substance);
     }
 

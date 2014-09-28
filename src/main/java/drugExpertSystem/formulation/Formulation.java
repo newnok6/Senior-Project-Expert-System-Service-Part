@@ -13,6 +13,8 @@ import java.util.List;
 public class Formulation {
     @Id
     long id;
+    String name;
+    String type;
     List<Excipient> api;
 
     public long getId() {
@@ -21,6 +23,22 @@ public class Formulation {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public List<Excipient> getApi() {
