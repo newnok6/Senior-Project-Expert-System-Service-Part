@@ -25,10 +25,10 @@ public class ExcipientController {
         System.out.println("Excipient adding sucessful");
     }
 
-    @RequestMapping(value = "update-excipient/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value = "update-excipient",method = RequestMethod.PUT)
     public  @ResponseBody
     void updateSubstance(@RequestBody Excipient excipient){
-        excipientService.addExcipient(excipient);
+        excipientService.updateExcipient(excipient);
     }
 
     @RequestMapping(value = "remove-excipient/{id}",method = RequestMethod.DELETE)

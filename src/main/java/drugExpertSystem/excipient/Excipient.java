@@ -23,6 +23,8 @@ public class Excipient {
 
     List<SubstanceFunction> substanceFunctions;
 
+
+
     float minWeight;
     float maxWeight;
     float usedWeight;

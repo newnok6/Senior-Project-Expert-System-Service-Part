@@ -38,7 +38,7 @@ public class FormulationController {
         formulationService.deleteFormulation(formulationService.getFormulationById(id));
     }
 
-    @RequestMapping(value = "/excipientList.json",method = RequestMethod.GET)
+    @RequestMapping(value = "/formulationList.json",method = RequestMethod.GET)
     public List<Formulation> getAllSubstance(){
         return formulationService.getAllFormulation();
     }

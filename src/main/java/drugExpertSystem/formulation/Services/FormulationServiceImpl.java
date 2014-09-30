@@ -24,7 +24,8 @@ public class FormulationServiceImpl implements FormulationService {
 
     @Override
     public Formulation addFormulation(Formulation formulation) {
-        formulation.setId(sequenceDao.getNextSequenceId("formulation"));
+        //formulation.setId(sequenceDao.getNextSequenceId("formulation"));
+
         /*
         if(formulation.getType()=="Tablet Formulation"){
             formulationRepository.save((Iterable<Formulation>) new TabletFormulation());
@@ -32,6 +33,7 @@ public class FormulationServiceImpl implements FormulationService {
             formulationRepository.save((Iterable<Formulation>) new SolutionFormulation());
         }
         */
+
         try{
             this.getFormulationById(formulation.getId());
         }catch (Exception e){

@@ -37,6 +37,11 @@ public class ExcipientServiceImpl implements ExcipientService {
     @Override
     @Transactional
     public Excipient updateExcipient(Excipient excipient) {
+        Excipient setdbExcipient = excipientRepository.findById(excipient.getId());
+        setdbExcipient.setMinWeight(excipient.getMinWeight());
+        setdbExcipient.setMaxWeight(excipient.getMaxWeight());
+        setdbExcipient.setUsedWeight(excipient.getUsedWeight());
+        setdbExcipient.setSubstanceFunctions(excipient.getSubstanceFunctions());
         excipientRepository.save(excipient);
         try{
             this.getExcipientById(excipient.getId());
