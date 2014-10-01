@@ -10,25 +10,46 @@ import java.util.List;
  * Created by Panupak on 5/24/2014.
  */
 @Document
-public class TabletFormulation {
-
-    long id;
-    List<Excipient> binder;
+public class TabletFormulation extends Formulation{
 
 
-    public long getId() {
-        return id;
+   List<Excipient> api;
+
+    public List<Excipient> getApi() {
+        return api;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setApi(List<Excipient> api) {
+        this.api = api;
     }
 
-    public List<Excipient> getBinder() {
-        return binder;
+    @Override
+    public String getId() {
+        return super.getId();
     }
 
-    public void setBinder(List<Excipient> binder) {
-        this.binder = binder;
+    @Override
+    public void setId(String id) {
+        super.setId(id);
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public String getType() {
+        return super.getType();
+    }
+
+    @Override
+    public void setType(String type) {
+        super.setType(type);
     }
 }

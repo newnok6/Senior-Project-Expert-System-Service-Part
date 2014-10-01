@@ -1,7 +1,11 @@
 package drugExpertSystem.formulation.Services;
 
 import drugExpertSystem.formulation.Formulation;
+import drugExpertSystem.formulation.Repository.TabletFormulationRepository;
+import drugExpertSystem.formulation.TabletFormulation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -9,30 +13,62 @@ import java.util.List;
  * Created by Panupak on 9/30/2014.
  */
 @Service
-public class TabletFormulationServiceImpl implements FormulationService {
+public class TabletFormulationServiceImpl implements TabletFormulationService {
+
+    @Autowired
+    TabletFormulationRepository tabletFormulationRepository;
+
 
     @Override
-    public Formulation addFormulation(Formulation formulation) {
-        return null;
+    @Transactional
+    public TabletFormulation addFormulation(TabletFormulation tabletFormulation) {
+        tabletFormulationRepository.save(tabletFormulation);
+        try{
+            this.getFormulation(tabletFormulation.getId());
+        }catch (Exception e){
+            return null;
+        }
+
+        return tabletFormulation;
     }
 
     @Override
-    public Formulation updateFormulation(Formulation formulation) {
-        return null;
+    @Transactional
+    public TabletFormulation updateFormulation(TabletFormulation tabletFormulation) {
+        TabletFormulation tabletFormulationInDb = tabletFormulationRepository.findOne(tabletFormulation.getId());
+        tabletFormulationInDb.setApi(tabletFormulation.getApi());
+        tabletFormulationRepository.save(tabletFormulationInDb);
+        try{
+            this.getFormulation(tabletFormulation.getId());
+        }catch (Exception e){
+            return null;
+        }
+
+        return tabletFormulation;
     }
 
     @Override
-    public Formulation deleteFormulation(Formulation formulation) {
-        return null;
+    @Transactional
+    public TabletFormulation deleteFormulation(TabletFormulation tabletFormulation) {
+        tabletFormulationRepository.delete(tabletFormulation);
+        try{
+            this.getFormulation(tabletFormulation.getId());
+        }catch (Exception e){
+            return null;
+        }
+
+        return tabletFormulation;
     }
 
     @Override
-    public List getAllFormulation() {
-        return null;
+    @Transactional
+    public List<TabletFormulation> getAllFormulation() {
+        return tabletFormulationRepository.findAll();
     }
 
     @Override
-    public Formulation getFormulationById(long id) {
-        return null;
+    @Transactional
+    public TabletFormulation getFormulation(String id) {
+        return tabletFormulationRepository.findOne(id);
     }
 }

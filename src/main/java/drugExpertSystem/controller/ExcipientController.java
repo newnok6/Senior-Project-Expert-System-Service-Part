@@ -32,7 +32,7 @@ public class ExcipientController {
     }
 
     @RequestMapping(value = "remove-excipient/{id}",method = RequestMethod.DELETE)
-    public  @ResponseBody void deleteSubstance(@PathVariable("id") Long id){
+    public  @ResponseBody void deleteSubstance(@PathVariable("id") String id){
         excipientService.deleteExcipient(excipientService.getExcipientById(id));
     }
 

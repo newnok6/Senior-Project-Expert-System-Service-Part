@@ -12,7 +12,7 @@ public interface SubstanceService<T extends Substance> {
     public T updateSubstance(T t);
     public T deleteSubstance(T t);
     public List<T> getAllSubstance();
-    public T getSubstanceById(long id);
-    public T getSubstanceByName(String name);
+    public T getSubstanceById(String id);
+
 
 }

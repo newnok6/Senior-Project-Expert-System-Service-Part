@@ -1,6 +1,8 @@
 package drugExpertSystem.excipient.services;
 
 import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
+import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 
 import java.util.List;
 
@@ -12,6 +14,8 @@ public interface ExcipientService<T extends Excipient> {
     public T updateExcipient(T t);
     public T deleteExcipient(T t);
     public List<T> getAllExcipient();
-    public T getExcipientById(long id);
+    public T getExcipientById(String id);
+    public void setSubstanceFunction(SubstanceFunction substanceFunction);
+    public List<SubstanceFunction> getSubstaneFunction();
 
 }

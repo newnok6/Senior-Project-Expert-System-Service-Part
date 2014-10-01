@@ -21,13 +21,13 @@ public class SubstanceServiceImpl implements SubstanceService {
 
 
 
-    @Autowired
-    SequenceDao sequenceDao;
+   // @Autowired
+    //SequenceDao sequenceDao;
 
     @Override
     @Transactional
     public Substance addsubstance(Substance substance) {
-        substance.setId(sequenceDao.getNextSequenceId("substance"));
+
         substanceRepository.save(substance);
         try{
             this.getSubstanceById(substance.getId());
@@ -41,7 +41,7 @@ public class SubstanceServiceImpl implements SubstanceService {
     @Transactional
     public Substance updateSubstance(Substance substance) {
 
-        Substance substanceInDb = substanceRepository.findById(substance.getId());
+        Substance substanceInDb = substanceRepository.findOne(substance.getId());
         substanceInDb.setName(substance.getName());
         substanceInDb.setWaterSolubility(substance.getWaterSolubility());
         substanceInDb.setStability(substance.getStability());
@@ -85,15 +85,10 @@ public class SubstanceServiceImpl implements SubstanceService {
 
     @Override
     @Transactional
-    public Substance getSubstanceById(long id) {
-        return substanceRepository.findById(id);
+    public Substance getSubstanceById(String  id) {
+        return substanceRepository.findOne(id);
     }
 
-    @Override
-    @Transactional
-    public Substance getSubstanceByName(String name) {
-        return substanceRepository.findByName(name);
-    }
 
 
 

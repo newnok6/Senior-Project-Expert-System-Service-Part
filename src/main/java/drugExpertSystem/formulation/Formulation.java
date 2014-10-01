@@ -12,16 +12,15 @@ import java.util.List;
 @Document
 public class Formulation {
     @Id
-    long id;
+    String id;
     String name;
     String type;
-    List<Excipient> api;
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -39,13 +38,5 @@ public class Formulation {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public List<Excipient> getApi() {
-        return api;
-    }
-
-    public void setApi(List<Excipient> api) {
-        this.api = api;
     }
 }

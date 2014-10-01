@@ -30,7 +30,7 @@ public class SubstanceController {
     }
 
     @RequestMapping(value = "remove-substance/{id}",method = RequestMethod.DELETE)
-    public  @ResponseBody void deleteSubstance(@PathVariable("id") Long id){
+    public  @ResponseBody void deleteSubstance(@PathVariable("id") String id){
         substanceService.deleteSubstance(substanceService.getSubstanceById(id));
     }
 
