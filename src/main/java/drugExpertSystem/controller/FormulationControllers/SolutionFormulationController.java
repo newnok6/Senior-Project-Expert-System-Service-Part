@@ -1,7 +1,7 @@
 package drugExpertSystem.controller.FormulationControllers;
 
 import drugExpertSystem.formulation.Services.SolutionFormulationService;
-import drugExpertSystem.formulation.SolutionFormulation;
+import drugExpertSystem.Model.SolutionFormulation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

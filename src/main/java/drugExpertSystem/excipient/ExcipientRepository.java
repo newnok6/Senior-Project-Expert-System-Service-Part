@@ -1,5 +1,6 @@
 package drugExpertSystem.excipient;
 
+import drugExpertSystem.Model.Excipient;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

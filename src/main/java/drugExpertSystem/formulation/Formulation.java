@@ -1,10 +1,7 @@
 package drugExpertSystem.formulation;
 
-import drugExpertSystem.excipient.Excipient;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.List;
 
 /**
  * Created by Panupak on 8/19/2014.

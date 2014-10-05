@@ -1,6 +1,6 @@
 package drugExpertSystem.formulation.Services;
 
-import drugExpertSystem.formulation.SolutionFormulation;
+import drugExpertSystem.Model.SolutionFormulation;
 
 /**
  * Created by Panupak on 10/1/2014.

@@ -1,8 +1,7 @@
 package drugExpertSystem.formulation.Services;
 
-import drugExpertSystem.formulation.Formulation;
 import drugExpertSystem.formulation.Repository.TabletFormulationRepository;
-import drugExpertSystem.formulation.TabletFormulation;
+import drugExpertSystem.Model.TabletFormulation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

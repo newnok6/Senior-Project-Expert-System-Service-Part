@@ -1,10 +1,8 @@
 package drugExpertSystem.substance.Service.substanceService;
 
-import drugExpertSystem.substance.DAO.SequeceNumber.SequenceDao;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.Model.Substance;
 import drugExpertSystem.substance.repository.SubstanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

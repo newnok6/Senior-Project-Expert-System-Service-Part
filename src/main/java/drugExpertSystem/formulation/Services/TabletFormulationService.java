@@ -1,7 +1,6 @@
 package drugExpertSystem.formulation.Services;
 
-import drugExpertSystem.formulation.Formulation;
-import drugExpertSystem.formulation.TabletFormulation;
+import drugExpertSystem.Model.TabletFormulation;
 
 /**
  * Created by Panupak on 9/30/2014.

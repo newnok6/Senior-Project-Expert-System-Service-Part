@@ -1,6 +1,6 @@
-package drugExpertSystem.formulation;
+package drugExpertSystem.Model;
 
-import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.formulation.Formulation;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;

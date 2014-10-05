@@ -1,6 +1,6 @@
 package drugExpertSystem.formulation.Repository;
 
-import drugExpertSystem.formulation.SolutionFormulation;
+import drugExpertSystem.Model.SolutionFormulation;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

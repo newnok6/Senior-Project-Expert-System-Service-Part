@@ -1,8 +1,7 @@
 package drugExpertSystem.substance.repository;
 
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.Model.Substance;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 /**

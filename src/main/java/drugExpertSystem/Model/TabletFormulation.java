@@ -1,7 +1,6 @@
-package drugExpertSystem.formulation;
+package drugExpertSystem.Model;
 
-import drugExpertSystem.excipient.Excipient;
-import org.springframework.data.annotation.Id;
+import drugExpertSystem.formulation.Formulation;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.List;
  * Created by Panupak on 5/24/2014.
  */
 @Document
-public class TabletFormulation extends Formulation{
+public class TabletFormulation extends Formulation {
 
 
    List<Excipient> api;

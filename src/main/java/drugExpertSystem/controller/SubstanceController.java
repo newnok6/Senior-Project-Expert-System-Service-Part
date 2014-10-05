@@ -1,6 +1,6 @@
 package drugExpertSystem.controller;
 
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.Model.Substance;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

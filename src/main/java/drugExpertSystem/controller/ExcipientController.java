@@ -1,9 +1,7 @@
 package drugExpertSystem.controller;
 
-import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.Model.Excipient;
 import drugExpertSystem.excipient.services.ExcipientService;
-import drugExpertSystem.formulation.Formulation;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

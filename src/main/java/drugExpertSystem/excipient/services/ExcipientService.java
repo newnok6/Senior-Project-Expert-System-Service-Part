@@ -1,8 +1,7 @@
 package drugExpertSystem.excipient.services;
 
-import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.Model.Excipient;
 import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
 
 import java.util.List;
 

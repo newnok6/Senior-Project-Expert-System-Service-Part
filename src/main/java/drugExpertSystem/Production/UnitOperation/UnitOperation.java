@@ -1,6 +1,6 @@
 package drugExpertSystem.Production.UnitOperation;
 
-import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.Model.Excipient;
 
 import java.util.List;
 

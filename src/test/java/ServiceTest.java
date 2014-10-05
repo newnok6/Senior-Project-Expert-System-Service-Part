@@ -1,27 +1,11 @@
-import drugExpertSystem.excipient.Excipient;
-//import drugExpertSystem.formulation.TabletFormulation;
+//import drugExpertSystem.Model.TabletFormulation;
 //import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
-import drugExpertSystem.substance.Entity.substanceProperty.*;
 //import drugExpertSystem.substance.Service.substanceFunctionService.CompoundFunctionServiceImpl;
 //import drugExpertSystem.substance.Service.substancePropertyService.*;
 //import drugExpertSystem.substance.repository.SolubilityRepository;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mock;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-
-import static org.junit.Assert.*;
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.*;
+
 /**
  * Created by narongrit saisuwan on 7/4/2014.
  */

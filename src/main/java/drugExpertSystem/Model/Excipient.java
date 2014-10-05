@@ -1,8 +1,8 @@
-package drugExpertSystem.excipient;
+package drugExpertSystem.Model;
 
 
 import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.Model.Substance;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;

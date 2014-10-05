@@ -1,8 +1,7 @@
 package drugExpertSystem.excipient.services;
 
-import drugExpertSystem.excipient.Excipient;
+import drugExpertSystem.Model.Excipient;
 import drugExpertSystem.excipient.ExcipientRepository;
-import drugExpertSystem.substance.DAO.SequeceNumber.SequenceDao;
 import drugExpertSystem.substance.Entity.SubstanceFunction.BinderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.DisintegrantFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.xml.bind.Binder;
 import java.util.ArrayList;
 import java.util.List;
 

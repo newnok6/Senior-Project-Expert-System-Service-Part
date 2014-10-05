@@ -1,7 +1,7 @@
-package drugExpertSystem.substance.Entity.SubstancePackage;
+package drugExpertSystem.Model;
 
 
-import drugExpertSystem.substance.Entity.substanceProperty.*;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
