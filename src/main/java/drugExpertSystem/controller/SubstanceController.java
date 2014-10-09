@@ -19,9 +19,10 @@ public class SubstanceController {
 
 
     @RequestMapping(value = "/add-substance",method = RequestMethod.POST)
-    public void addSubstance(@RequestBody Substance substance){
+    public @ResponseBody List<Substance> addSubstance(@RequestBody Substance substance){
         substanceService.addsubstance(substance);
-        System.out.println("Substance adding sucessful");
+        return substanceService.getAllSubstance();
+        //System.out.println("Substance adding sucessful");
     }
 
     @RequestMapping(value = "update-substance",method = RequestMethod.PUT)
@@ -35,7 +36,7 @@ public class SubstanceController {
     }
 
     @RequestMapping(value = "/substanceList.json",method = RequestMethod.GET)
-    public List<Substance> getAllSubstance(){
+    public @ResponseBody List<Substance> getAllSubstance(){
         return substanceService.getAllSubstance();
     }
 

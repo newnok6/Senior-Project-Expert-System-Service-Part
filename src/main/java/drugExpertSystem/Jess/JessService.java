@@ -9,3 +9,19 @@ public interface JessService {
     public void addBaseFact();
     public Rete getFact();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
