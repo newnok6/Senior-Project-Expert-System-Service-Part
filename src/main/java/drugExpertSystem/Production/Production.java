@@ -1,10 +1,12 @@
 package drugExpertSystem.Production;
 
-import drugExpertSystem.Model.SolutionFormulation;
-import drugExpertSystem.Production.DFProperties.DFProperty;
+
+import
+        drugExpertSystem.Production.DFProperties.DFProperty;
 import drugExpertSystem.Production.QualityControl.QualityControl;
 import drugExpertSystem.formulation.Formulation;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -12,15 +14,18 @@ import java.util.List;
 /**
  * Created by Panupak on 8/21/2014.
  */
+@Document
+public class Production  {
 
-public class Production {
-
+    @Id
     String id;
    // Process process;
-    SolutionFormulation formulation;
+    Formulation formulation;
    //List<QualityControl> qualityControlList;
     DFProperty dfProperty;
-   // String instraction;
+
+    @TextIndexed
+    String instraction;
     float formulationWeight;
 
 
@@ -32,12 +37,20 @@ public class Production {
         this.id = id;
     }
 
-    public SolutionFormulation getFormulation() {
+    public Formulation getFormulation() {
         return formulation;
     }
 
-    public void setFormulation(SolutionFormulation formulation) {
+    public void setFormulation(Formulation formulation) {
         this.formulation = formulation;
+    }
+
+    public String getInstraction() {
+        return instraction;
+    }
+
+    public void setInstraction(String instraction) {
+        this.instraction = instraction;
     }
 
     public DFProperty getDfProperty() {
@@ -48,13 +61,7 @@ public class Production {
         this.dfProperty = dfProperty;
     }
 
-    // public String getInstraction() {
-      //  return instraction;
-   // }
 
-   // public void setInstraction(String instraction) {
-       // this.instraction = instraction;
-  //  }
 
     public float getFormulationWeight() {
        return formulationWeight;

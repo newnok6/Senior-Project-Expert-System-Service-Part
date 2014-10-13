@@ -10,23 +10,21 @@ import java.util.List;
 
 @Document
 public class Substance{
-
-
     @Id
     String id;
     String name;
     String waterSolubility;
     List stability;
-    float pka;
-    float partitionCoefficient;
+    double pka;
+    double partitionCoefficient;
     String solidState;
     String hygroscopicity;
     String particleSize;
     String alcoholSolubility;
     String flowability;
-    float density;
+    double density;
     String saltForm;
-    float mocularWeight;
+    double mocularWeight;
     String ionicity;
 
 
@@ -62,19 +60,19 @@ public class Substance{
         this.stability = stability;
     }
 
-    public float getPka() {
+    public double getPka() {
         return pka;
     }
 
-    public void setPka(float pka) {
+    public void setPka(double pka) {
         this.pka = pka;
     }
 
-    public float getPartitionCoefficient() {
+    public double getPartitionCoefficient() {
         return partitionCoefficient;
     }
 
-    public void setPartitionCoefficient(float partitionCoefficient) {
+    public void setPartitionCoefficient(double partitionCoefficient) {
         this.partitionCoefficient = partitionCoefficient;
     }
 
@@ -118,11 +116,11 @@ public class Substance{
         this.flowability = flowability;
     }
 
-    public float getDensity() {
+    public double getDensity() {
         return density;
     }
 
-    public void setDensity(float density) {
+    public void setDensity(double density) {
         this.density = density;
     }
 
@@ -134,11 +132,11 @@ public class Substance{
         this.saltForm = saltForm;
     }
 
-    public float getMocularWeight() {
+    public double getMocularWeight() {
         return mocularWeight;
     }
 
-    public void setMocularWeight(float mocularWeight) {
+    public void setMocularWeight(double mocularWeight) {
         this.mocularWeight = mocularWeight;
     }
 

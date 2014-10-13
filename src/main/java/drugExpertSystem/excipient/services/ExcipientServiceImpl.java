@@ -1,15 +1,19 @@
 package drugExpertSystem.excipient.services;
 
 import drugExpertSystem.Model.Excipient;
+import drugExpertSystem.Model.Substance;
 import drugExpertSystem.excipient.ExcipientRepository;
 import drugExpertSystem.substance.Entity.SubstanceFunction.BinderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.DisintegrantFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
+import drugExpertSystem.substance.repository.SubstanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -20,6 +24,9 @@ public class ExcipientServiceImpl implements ExcipientService {
 
     @Autowired
     ExcipientRepository excipientRepository;
+
+    @Autowired
+    SubstanceRepository substanceRepository;
 
     //@Autowired
    // SequenceDao sequenceDao;
@@ -47,9 +54,6 @@ public class ExcipientServiceImpl implements ExcipientService {
     @Transactional
     public Excipient updateExcipient(Excipient excipient) {
         Excipient setdbExcipient = excipientRepository.findOne(excipient.getId());
-        setdbExcipient.setMinWeight(excipient.getMinWeight());
-        setdbExcipient.setMaxWeight(excipient.getMaxWeight());
-        setdbExcipient.setUsedWeight(excipient.getUsedWeight());
         setdbExcipient.setSubstanceFunctions(excipient.getSubstanceFunctions());
         excipientRepository.save(excipient);
         try{
@@ -89,12 +93,16 @@ public class ExcipientServiceImpl implements ExcipientService {
                 BinderFunction binderFunction = new BinderFunction();
                 binderFunction.setFunctionName(substanceFunction.getFunctionName());
                 binderFunction.setFunctionType(substanceFunction.getFunctionType());
+                binderFunction.setMaxWeight(substanceFunction.getMaxWeight());
+                binderFunction.setMinWeight(substanceFunction.getMinWeight());
                 substanceFunctionList.add(binderFunction);
                 break;
             case "disintegrant" :
                 DisintegrantFunction disintegrantFunction = new DisintegrantFunction();
                 disintegrantFunction.setFunctionName(substanceFunction.getFunctionName());
                 disintegrantFunction.setFunctionType(substanceFunction.getFunctionType());
+                disintegrantFunction.setMaxWeight(substanceFunction.getMaxWeight());
+                disintegrantFunction.setMinWeight(substanceFunction.getMinWeight());
                 substanceFunctionList.add(disintegrantFunction);
                 break;
             default:
@@ -108,5 +116,13 @@ public class ExcipientServiceImpl implements ExcipientService {
     public List<SubstanceFunction> getSubstaneFunction() {
 
         return substanceFunctionList;
+    }
+
+    @Override
+    @Transactional
+    public List<Substance> getSubstanceForExcipient() {
+
+
+        return substanceRepository.findAll();
     }
 }

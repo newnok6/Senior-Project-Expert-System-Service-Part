@@ -1,7 +1,9 @@
 package drugExpertSystem.controller;
 
 import drugExpertSystem.Model.Excipient;
+import drugExpertSystem.Model.Substance;
 import drugExpertSystem.excipient.services.ExcipientService;
+import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,25 +20,35 @@ public class ExcipientController {
 
 
     @RequestMapping(value = "/add-excipient",method = RequestMethod.POST)
-    public void addSubstance(@RequestBody Excipient excipient){
+    public void addExcipient(@RequestBody Excipient excipient){
         excipientService.addExcipient(excipient);
+        for(SubstanceFunction substanceFunction : excipient.getSubstanceFunctions()){
+            System.out.println(substanceFunction.getMaxWeight());
+            System.out.println(substanceFunction.getMinWeight());
+        }
         System.out.println("Excipient adding sucessful");
     }
 
     @RequestMapping(value = "update-excipient",method = RequestMethod.PUT)
     public  @ResponseBody
-    void updateSubstance(@RequestBody Excipient excipient){
+    void updateExcipient(@RequestBody Excipient excipient){
         excipientService.updateExcipient(excipient);
     }
 
     @RequestMapping(value = "remove-excipient/{id}",method = RequestMethod.DELETE)
-    public  @ResponseBody void deleteSubstance(@PathVariable("id") String id){
+    public  @ResponseBody void deleteExcipient(@PathVariable("id") String id){
         excipientService.deleteExcipient(excipientService.getExcipientById(id));
     }
 
+
     @RequestMapping(value = "/excipientList.json",method = RequestMethod.GET)
-    public List<Excipient> getAllSubstance(){
+    public List<Excipient> getAllExcipient(){
         return excipientService.getAllExcipient();
+    }
+
+    @RequestMapping(value = "/substanceListForExcipient.json",method = RequestMethod.GET)
+    public List<Substance> getAllSubstance(){
+        return excipientService.getSubstanceForExcipient();
     }
 
 }

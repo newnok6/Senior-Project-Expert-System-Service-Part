@@ -20,14 +20,10 @@ public class Excipient {
 
     @DBRef
     Substance substance;
-
     List<SubstanceFunction> substanceFunctions;
+    double usedWeight;
 
 
-
-    float minWeight;
-    float maxWeight;
-    float usedWeight;
 
     public String getId() {
         return id;
@@ -45,29 +41,6 @@ public class Excipient {
         this.substance = substance;
     }
 
-    public float getMinWeight() {
-        return minWeight;
-    }
-
-    public void setMinWeight(float minWeight) {
-        this.minWeight = minWeight;
-    }
-
-    public float getMaxWeight() {
-        return maxWeight;
-    }
-
-    public void setMaxWeight(float maxWeight) {
-        this.maxWeight = maxWeight;
-    }
-
-    public float getUsedWeight() {
-        return usedWeight;
-    }
-
-    public void setUsedWeight(float usedWeight) {
-        this.usedWeight = usedWeight;
-    }
 
     public List<SubstanceFunction> getSubstanceFunctions() {
         return substanceFunctions;
@@ -75,5 +48,13 @@ public class Excipient {
 
     public void setSubstanceFunctions(List<SubstanceFunction> substanceFunctions) {
         this.substanceFunctions = substanceFunctions;
+    }
+
+    public double getUsedWeight() {
+        return usedWeight;
+    }
+
+    public void setUsedWeight(double usedWeight) {
+        this.usedWeight = usedWeight;
     }
 }

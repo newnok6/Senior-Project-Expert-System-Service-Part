@@ -8,10 +8,10 @@ import java.util.List;
 /**
  * Created by Panupak on 10/7/2014.
  */
-public interface InferenceEngineCreator <T extends Object> {
-    public void addBaseData(List<T> t);
-    public void addReformulateData(T t);
-    public T getReformulateResult() throws JessException;
+public interface InferenceEngineCreator{
+    public void addBaseData(List<Production> productions);
+    public void addReformulateData(Production production);
+    public Production getReformulateResult() ;
 
 
 }

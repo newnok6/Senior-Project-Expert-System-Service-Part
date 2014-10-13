@@ -57,10 +57,10 @@
         <mongo:repository id="substanceRepository" mongo-template-ref="substanceTemplate"/>
         <mongo:repository id="excipientRepository" mongo-template-ref="excipientTemplate"/>
         <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
-        <mongo:repository id="tabletFormulationRepository" mongo-template-ref="tabletFormulationTemplate"/>
-        <mongo:repository id="solutionFormulationRepository" mongo-template-ref="solutionFormulationTemplate"/>
+        <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
         <mongo:repository id="productionRepository" mongo-template-ref="productionTemplate"/>
         <mongo:repository id="reformulateProductionRepository" mongo-template-ref="reformulateProductionTemplate"/>
+        <mongo:repository id="reformulateProductionHistoryRepository" mongo-template-ref="reformulateHistoryProductionTemplate"/>
     </mongo:repositories>
 
 

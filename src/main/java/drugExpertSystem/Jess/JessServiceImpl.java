@@ -2,8 +2,8 @@ package drugExpertSystem.Jess;
 
 import drugExpertSystem.Model.Substance;
 import drugExpertSystem.excipient.ExcipientRepository;
-import drugExpertSystem.formulation.Repository.SolutionFormulationRepository;
-import drugExpertSystem.formulation.Repository.TabletFormulationRepository;
+
+import drugExpertSystem.formulation.Repository.FormulationRepository;
 import drugExpertSystem.substance.repository.SubstanceRepository;
 import jess.JessException;
 import jess.Rete;
@@ -22,9 +22,8 @@ public class JessServiceImpl implements JessService {
     @Autowired
     ExcipientRepository excipientRepository;
     @Autowired
-    TabletFormulationRepository tabletFormulationRepository;
-    @Autowired
-    SolutionFormulationRepository solutionFormulationRepository;
+    FormulationRepository formulationRepository;
+
 
     private Rete rete;
     private WorkingMemoryMarker marker;
@@ -42,8 +41,7 @@ public class JessServiceImpl implements JessService {
             rete.batch("drugExpertRule.clp");
             rete.addAll(substanceRepository.findAll());
             rete.addAll(excipientRepository.findAll());
-            rete.addAll(tabletFormulationRepository.findAll());
-            rete.addAll(solutionFormulationRepository.findAll());
+            rete.addAll(formulationRepository.findAll());
 
             // Mark end of catalog data for later
             marker = rete.mark();

@@ -4,11 +4,10 @@ import drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasonin
 import drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine;
 import drugExpertSystem.Production.Production;
 import drugExpertSystem.Production.ProductionRepository;
-import drugExpertSystem.ReformulateProduction.ReformulateProduction;
-import jess.JessException;
+import drugExpertSystem.ReformulateProduction.ReformulatedProduction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,35 +23,41 @@ public class InferenceEngineDirector {
 
 
 
-  @Transactional
-   public List<ReformulateProduction> getReformulateProduction(ReformulateProduction reformulateProduction) throws JessException {
+   public List<ReformulatedProduction> getReformulateResult(Production production){
+
        InferenceEngineCreator inferenceEngineCreator;
 
-       List<ReformulateProduction> reformulateResult = new ArrayList<>();
 
-       inferenceEngineCreator = new RulebaseEngine();
-       inferenceEngineCreator.addReformulateData(reformulateProduction.getProduction());
-       inferenceEngineCreator.addBaseData(productionRepository.findAll());
+       ArrayList<ReformulatedProduction> reformulatedProductions = new ArrayList<>();
 
-       //Reformulation By Rule Base //
-       ReformulateProduction rulebaseSection = new ReformulateProduction();
-       rulebaseSection.setInferenceEngine("ruleBase");
-       rulebaseSection.setProduction((Production) inferenceEngineCreator.getReformulateResult());
-       rulebaseSection.setUser(reformulateProduction.getUser());
-       reformulateResult.add(rulebaseSection);
+       //Reformulation by Rule Base //
+        InferenceEngineCreator rulebaseEngine = new RulebaseEngine();
+        rulebaseEngine.addReformulateData(production);
+        rulebaseEngine.addBaseData(productionRepository.findAll());
 
 
        //Reformulation By Case Base Reasoning //
-       inferenceEngineCreator = new CasebaseReasoningEngine();
-       inferenceEngineCreator.addReformulateData(reformulateProduction.getProduction());
-       inferenceEngineCreator.addBaseData(productionRepository.findAll());
-       ReformulateProduction caseBaseSection = new ReformulateProduction();
-       caseBaseSection.setInferenceEngine("caseBase");
-       caseBaseSection.setProduction((Production) inferenceEngineCreator.getReformulateResult());
-       rulebaseSection.setUser(reformulateProduction.getUser());
-       reformulateResult.add(caseBaseSection);
+       InferenceEngineCreator casebaseReasoningEngine = new CasebaseReasoningEngine();
+       casebaseReasoningEngine.addReformulateData(production);
+       casebaseReasoningEngine.addBaseData(productionRepository.findAll());
 
 
-       return reformulateResult;
+       // Reformulated Production that reformulate by rulebase //
+       ReformulatedProduction rulebaseProduction = new ReformulatedProduction();
+       rulebaseProduction.setAccept(false);
+       rulebaseProduction.setInferenceEngine("ruleBase");
+       rulebaseProduction.setProduction(rulebaseEngine.getReformulateResult());
+
+       // Reformulated Production that reformulate by case base reasoning //
+       ReformulatedProduction casebaseProduction = new ReformulatedProduction();
+       casebaseProduction.setAccept(false);
+       casebaseProduction.setInferenceEngine("caseBase");
+       casebaseProduction.setProduction(casebaseReasoningEngine.getReformulateResult());
+
+       // Add reformulated production to the list //
+       reformulatedProductions.add(rulebaseProduction);
+       reformulatedProductions.add(casebaseProduction);
+
+       return reformulatedProductions;
    }
 }

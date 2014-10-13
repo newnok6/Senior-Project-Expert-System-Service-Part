@@ -13,6 +13,9 @@ import java.util.List;
 
 import drugExpertSystem.Jess.JessServiceImpl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Panupak on 6/27/2014.
  */
@@ -20,8 +23,12 @@ import drugExpertSystem.Jess.JessServiceImpl;
 public class main {
     public static void main (String[] args ){
 
-        JessServiceImpl jessService = new JessServiceImpl();
-        jessService.addBaseFact();
+        List<Integer> integers = new ArrayList<>();
+        integers.add(5);
+        integers.add(6);
 
+        for (Integer integer : integers){
+            System.out.println(integer);
+        }
     }
 }

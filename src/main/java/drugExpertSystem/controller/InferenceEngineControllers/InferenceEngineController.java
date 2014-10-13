@@ -4,8 +4,7 @@ import drugExpertSystem.InferenceEngine.InferenceEngineDirector;
 import drugExpertSystem.Jess.JessService;
 
 import drugExpertSystem.Production.Production;
-import drugExpertSystem.ReformulateProduction.ReformulateProduction;
-import jess.JessException;
+import drugExpertSystem.ReformulateProduction.ReformulatedProduction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,15 +23,15 @@ public class InferenceEngineController {
     InferenceEngineDirector inferenceEngineDirector;
 
     @RequestMapping(value = "/reformulate-production",method = RequestMethod.POST)
-    public @ResponseBody List<ReformulateProduction> inferenceEngine(@RequestBody ReformulateProduction reformulateProduction){
-
+    public @ResponseBody List<ReformulatedProduction> reformulateProduction(@RequestBody Production production){
         try {
-            return inferenceEngineDirector.getReformulateProduction(reformulateProduction);
-        } catch (JessException e) {
+            inferenceEngineDirector.getReformulateResult(production);
+        }catch (Exception e){
             e.printStackTrace();
         }
 
-        return null;
+        return inferenceEngineDirector.getReformulateResult(production);
+
 
 
         // jessService.addBaseFact();

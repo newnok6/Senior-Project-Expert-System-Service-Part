@@ -1,6 +1,7 @@
 package drugExpertSystem.InferenceEngine.RuleBaseEngine;
 
 import drugExpertSystem.InferenceEngine.InferenceEngineCreator;
+import drugExpertSystem.Production.DFProperties.DFProperty;
 import drugExpertSystem.Production.Production;
 import jess.JessException;
 import jess.Rete;
@@ -10,20 +11,22 @@ import java.util.List;
 /**
  * Created by Panupak on 10/7/2014.
  */
-public class RulebaseEngine implements InferenceEngineCreator<Production> {
+public class RulebaseEngine implements InferenceEngineCreator{
 
-     Production reformulateproduction;
-     List<Production> baseProduction;
-     Rete jessEngine;
+     private Production reformulateproduction;
+     private List<Production> baseProduction;
+     private Rete jessEngine;
 
     @Override
     public void addBaseData(List<Production> productionList) {
-          this.baseProduction = productionList;
+
+        baseProduction = productionList;
     }
 
     @Override
     public void addReformulateData(Production production) {
-          this.reformulateproduction = production;
+
+        reformulateproduction = production;
     }
 
     @Override
@@ -35,7 +38,16 @@ public class RulebaseEngine implements InferenceEngineCreator<Production> {
         }catch (JessException ex){
             ex.getExecutionContext();
         }
-        return reformulateproduction;
+        Production production = new Production();
+        production.setFormulation(reformulateproduction.getFormulation());
+        production.setFormulationWeight(reformulateproduction.getFormulationWeight());
+        DFProperty dfProperty = new DFProperty();
+        dfProperty.setDisgradationtime(50);
+        dfProperty.setTotalweight(14);
+        dfProperty.setHardness(90);
+        dfProperty.setDissolutionProfile(reformulateproduction.getDfProperty().getDissolutionProfile());
+        production.setDfProperty(dfProperty);
+        return production;
     }
 
 
