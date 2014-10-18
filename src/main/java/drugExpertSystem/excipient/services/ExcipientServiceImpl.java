@@ -31,7 +31,7 @@ public class ExcipientServiceImpl implements ExcipientService {
     //@Autowired
    // SequenceDao sequenceDao;
 
-    List<SubstanceFunction> substanceFunctionList = new ArrayList<SubstanceFunction>();
+    List<SubstanceFunction> substanceFunctionList ;
 
     @Override
     @Transactional
@@ -86,7 +86,7 @@ public class ExcipientServiceImpl implements ExcipientService {
     @Override
     @Transactional
     public void setSubstanceFunction(SubstanceFunction substanceFunction) {
-
+        substanceFunctionList = new ArrayList<>();
         String substanceFnName = substanceFunction.getFunctionName();
         switch (substanceFnName){
             case "binder" :
@@ -118,6 +118,7 @@ public class ExcipientServiceImpl implements ExcipientService {
         return substanceFunctionList;
     }
 
+    /*
     @Override
     @Transactional
     public List<Substance> getSubstanceForExcipient() {
@@ -125,4 +126,5 @@ public class ExcipientServiceImpl implements ExcipientService {
 
         return substanceRepository.findAll();
     }
+    */
 }

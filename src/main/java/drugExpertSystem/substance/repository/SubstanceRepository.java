@@ -10,5 +10,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SubstanceRepository extends MongoRepository<Substance,String> {
 
-    Substance findByName(String name);
+
 }

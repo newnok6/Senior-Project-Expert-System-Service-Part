@@ -46,9 +46,9 @@ public class ExcipientController {
         return excipientService.getAllExcipient();
     }
 
-    @RequestMapping(value = "/substanceListForExcipient.json",method = RequestMethod.GET)
-    public List<Substance> getAllSubstance(){
-        return excipientService.getSubstanceForExcipient();
-    }
+    //@RequestMapping(value = "/substanceListForExcipient.json",method = RequestMethod.GET)
+    //public List<Substance> getAllSubstance(){
+      //  return excipientService.getSubstanceForExcipient();
+    //}
 
 }

@@ -12,7 +12,7 @@ import java.util.List;
  * Created by Panupak on 10/12/2014.
  */
 @Service
-public class FormulationServiceImpl implements FormulationService<Formulation> {
+public class FormulationServiceImpl implements FormulationService {
     @Autowired
     FormulationRepository formulationRepository;
 
@@ -32,10 +32,10 @@ public class FormulationServiceImpl implements FormulationService<Formulation> {
     @Transactional
     public Formulation updateFormulation(Formulation formulation) {
         Formulation formulationInDb = formulationRepository.findOne(formulation.getId());
-        formulationInDb.setApi(formulation.getApi());
+        formulationInDb.setExcipient(formulation.getExcipient());
         formulationRepository.save(formulationInDb);
         try{
-            this.getFormulation(formulation.getId());
+            this.getFormulationById(formulation.getId());
         }catch (Exception e){
             return null;
         }
@@ -46,13 +46,13 @@ public class FormulationServiceImpl implements FormulationService<Formulation> {
     @Transactional
     public Formulation deleteFormulation(String id) {
         try{
-            formulationRepository.delete(this.getFormulation(id));
+            formulationRepository.delete(this.getFormulationById(id));
         }catch (Exception e){
             e.printStackTrace();
             return null;
         }
 
-        return this.getFormulation(id);
+        return this.getFormulationById(id);
     }
 
     @Override
@@ -63,7 +63,7 @@ public class FormulationServiceImpl implements FormulationService<Formulation> {
 
     @Override
     @Transactional
-    public Formulation getFormulation(String id) {
+    public Formulation getFormulationById(String id) {
         return formulationRepository.findOne(id);
     }
 }

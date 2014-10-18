@@ -1,6 +1,7 @@
 package drugExpertSystem.Production;
 
 
+import drugExpertSystem.Production.ActiveIngredientProperties.ActiveIngredient;
 import
         drugExpertSystem.Production.DFProperties.DFProperty;
 import drugExpertSystem.Production.QualityControl.QualityControl;
@@ -20,9 +21,11 @@ public class Production  {
     @Id
     String id;
    // Process process;
-    Formulation formulation;
+    String formulationName;
+    ActiveIngredient activeIngredient;
    //List<QualityControl> qualityControlList;
     DFProperty dfProperty;
+
 
     @TextIndexed
     String instraction;
@@ -37,12 +40,12 @@ public class Production  {
         this.id = id;
     }
 
-    public Formulation getFormulation() {
-        return formulation;
+    public String getFormulationName() {
+        return formulationName;
     }
 
-    public void setFormulation(Formulation formulation) {
-        this.formulation = formulation;
+    public void setFormulationName(String formulationName) {
+        this.formulationName = formulationName;
     }
 
     public String getInstraction() {
@@ -70,4 +73,12 @@ public class Production  {
    public void setFormulationWeight(float formulationWeight) {
        this.formulationWeight = formulationWeight;
    }
+
+    public ActiveIngredient getActiveIngredient() {
+        return activeIngredient;
+    }
+
+    public void setActiveIngredient(ActiveIngredient activeIngredient) {
+        this.activeIngredient = activeIngredient;
+    }
 }

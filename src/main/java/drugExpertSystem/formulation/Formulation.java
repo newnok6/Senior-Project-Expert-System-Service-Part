@@ -15,7 +15,7 @@ public class Formulation {
     String id;
     String name;
     String type;
-    List<Excipient> api;
+    List<Excipient> excipient;
 
     public String getId() {
         return id;
@@ -41,11 +41,11 @@ public class Formulation {
         this.type = type;
     }
 
-    public List<Excipient> getApi() {
-        return api;
+    public List<Excipient> getExcipient() {
+        return excipient;
     }
 
-    public void setApi(List<Excipient> api) {
-        this.api = api;
+    public void setExcipient(List<Excipient> excipient) {
+        this.excipient = excipient;
     }
 }

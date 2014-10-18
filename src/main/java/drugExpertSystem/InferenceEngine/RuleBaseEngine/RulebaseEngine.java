@@ -39,7 +39,7 @@ public class RulebaseEngine implements InferenceEngineCreator{
             ex.getExecutionContext();
         }
         Production production = new Production();
-        production.setFormulation(reformulateproduction.getFormulation());
+        production.setFormulationName(reformulateproduction.getFormulationName());
         production.setFormulationWeight(reformulateproduction.getFormulationWeight());
         DFProperty dfProperty = new DFProperty();
         dfProperty.setDisgradationtime(50);

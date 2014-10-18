@@ -38,7 +38,7 @@ public class CasebaseReasoningEngine implements InferenceEngineCreator{
     public Production getReformulateResult() {
 
        Production production = new Production();
-       production.setFormulation(caseBaseproduction.getFormulation());
+       production.setFormulationName(caseBaseproduction.getFormulationName());
        production.setFormulationWeight(caseBaseproduction.getFormulationWeight());
        DFProperty dfProperty = new DFProperty();
        dfProperty.setDisgradationtime(70);
