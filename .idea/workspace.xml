@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DrugOntologyExpertSystem:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="befc5384-8e04-45cd-835c-6ca6c0c9f532" name="Default" comment="" />
     <ignored path="DrugOntologyExpertSystem.iws" />
@@ -63,16 +71,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="substanceIndexProp.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminhtml/substanceIndexProp.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+>>>>>>> New_Drug_Expert_System_beta_version
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="SolubilityController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/substancePropertyController/SolubilityController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,10 +156,21 @@
             <state vertical-scroll-proportion="0.21212122" vertical-offset="0" max-vertical-offset="561">
               <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
+=======
+      <file leaf-file-name="SimpleCORSFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Filter/SimpleCORSFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> New_Drug_Expert_System_beta_version
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="SimpleCORSFilter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Filter/SimpleCORSFilter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -158,6 +186,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1207">
               <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+=======
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="343">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> New_Drug_Expert_System_beta_version
               <folding />
             </state>
           </provider>
@@ -173,6 +208,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/html/testing.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/appConfig.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminhome.html" />
@@ -224,6 +260,59 @@
         <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/substancePropertyController/SolubilityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Filter/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/substanceProperty/Solubility.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/drugExpertRule.clp" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Jess/JessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/ReformulateProduction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/RuleBase/InferenceEngineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/User/Repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/User/Services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/User/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/User/Services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/InferenceEngineController/InferenceEngineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/SubstanceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Filter/SimpleCORSFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/DFProperties/DFProperty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/InferenceEngineCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulateProduction/ReformulateProduction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/ReformulatedHistory/ReformulatedHistoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/InferenceEngineControllers/InferenceEngineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/Substance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/SolutionFormulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/TabletFormulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/Excipient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/SubstanceFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/DisintegrantFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/BinderFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Repository/FormulationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/FormulationControllers/Formulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/FormulationControllers/FormulationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Jess/JessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/InferenceEngineDirector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/repository/SubstanceRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/ExcipientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Service/substanceService/SubstanceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Services/FormulationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/services/ExcipientService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/services/ExcipientServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Formulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/RuleBaseEngine/RulebaseEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Services/FormulationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/CaseBaseReasoningEngine/CasebaseReasoningEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/Production.java" />
+        <option value="$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ActiveIngredientProperties/ActiveIngredient.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/log4j.properties" />
+>>>>>>> New_Drug_Expert_System_beta_version
       </list>
     </option>
   </component>
@@ -322,6 +411,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,6 +427,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DrugOntologyExpertSystem" />
+<<<<<<< HEAD
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -642,6 +733,9 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="substanceProperty" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+>>>>>>> New_Drug_Expert_System_beta_version
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -651,31 +745,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DrugOntologyExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="substance" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SubstancePackage" />
@@ -689,65 +763,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DrugOntologyExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="substance" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SubstanceFunction" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrugOntologyExpertSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrugOntologyExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drugExpertSystem" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="substance" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DAO" />
@@ -949,7 +973,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -968,12 +991,23 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesJSP" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.15442279" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="drugontologyexpertsystem" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -983,11 +1017,11 @@
       <recent name="excipient" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem" />
       <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\test\java" />
       <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\main\webapp\WEB-INF\classes" />
       <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\main\webapp\resources\js" />
       <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\main\webapp\WEB-INF" />
-      <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\main\java\drugExpertSystem\substance\Service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\All for desktop\Senior project\Implementation\code\DrugOntologyExpertSystem\src\main\webapp\resources" />
@@ -1003,12 +1037,20 @@
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8081" />
+<<<<<<< HEAD
           <option name="urlPath" value="/solubility/add-solubility" />
+=======
+          <option name="urlPath" value="/substance/add-substance" />
+>>>>>>> New_Drug_Expert_System_beta_version
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Accept" />
+<<<<<<< HEAD
                 <option name="value" value="application/json" />
+=======
+                <option name="value" value="*/*" />
+>>>>>>> New_Drug_Expert_System_beta_version
               </KeyValuePair>
               <KeyValuePair>
                 <option name="key" value="Cache-Control" />
@@ -1016,6 +1058,7 @@
               </KeyValuePair>
             </list>
           </option>
+<<<<<<< HEAD
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="dfd" />
@@ -1034,12 +1077,23 @@
               <KeyValuePair>
                 <option name="key" value="Cache-Control" />
                 <option name="value" value="no-cache" />
+=======
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+>>>>>>> New_Drug_Expert_System_beta_version
               </KeyValuePair>
             </list>
           </option>
           <option name="parametersEnabled" value="true" />
           <option name="haveTextToSend" value="true" />
+<<<<<<< HEAD
           <option name="textToSend" value="{type : &quot;B&quot;}" />
+=======
+          <option name="textToSend" value="" />
+>>>>>>> New_Drug_Expert_System_beta_version
           <option name="filesToSend" value="" />
         </RestClientRequest>
       </list>
@@ -1595,6 +1649,7 @@
       <workItem from="1406848973159" duration="451000" />
       <workItem from="1407395127632" duration="55000" />
       <workItem from="1407546395203" duration="685000" />
+<<<<<<< HEAD
       <workItem from="1407552135074" duration="62000" />
       <workItem from="1408148261852" duration="4907000" />
       <workItem from="1408338659604" duration="351000" />
@@ -1612,11 +1667,118 @@
       <workItem from="1411350257243" duration="3155000" />
       <workItem from="1411397723498" duration="118000" />
       <workItem from="1412043058202" duration="64000" />
+=======
+      <workItem from="1407551972694" duration="115000" />
+      <workItem from="1407552257362" duration="5000" />
+      <workItem from="1407552421758" duration="6676000" />
+      <workItem from="1407565254221" duration="3712000" />
+      <workItem from="1408093530513" duration="61000" />
+      <workItem from="1408147857747" duration="338000" />
+      <workItem from="1408153360369" duration="1116000" />
+      <workItem from="1408334480842" duration="3027000" />
+      <workItem from="1408338065550" duration="375000" />
+      <workItem from="1408338592868" duration="27000" />
+      <workItem from="1408405570592" duration="2127000" />
+      <workItem from="1408408747985" duration="1832000" />
+      <workItem from="1408411662834" duration="585000" />
+      <workItem from="1408412320614" duration="65000" />
+      <workItem from="1408413918239" duration="484000" />
+      <workItem from="1408509155180" duration="1167000" />
+      <workItem from="1408582062422" duration="780000" />
+      <workItem from="1408583733692" duration="6991000" />
+      <workItem from="1408591673770" duration="2050000" />
+      <workItem from="1408604575822" duration="25000" />
+      <workItem from="1408604817972" duration="1065000" />
+      <workItem from="1408608048180" duration="24000" />
+      <workItem from="1408608794594" duration="230000" />
+      <workItem from="1408620182696" duration="2745000" />
+      <workItem from="1408753748022" duration="481000" />
+      <workItem from="1408767053894" duration="1839000" />
+      <workItem from="1409590581211" duration="94000" />
+      <workItem from="1410871969916" duration="129000" />
+      <workItem from="1411347860433" duration="2156000" />
+      <workItem from="1411398187759" duration="1424000" />
+      <workItem from="1411429658447" duration="87000" />
+      <workItem from="1411431187942" duration="1294000" />
+      <workItem from="1411491933621" duration="388000" />
+      <workItem from="1411518323347" duration="821000" />
+      <workItem from="1411529738667" duration="4089000" />
+      <workItem from="1411544607416" duration="3173000" />
+      <workItem from="1411570335123" duration="677000" />
+      <workItem from="1411606324748" duration="1766000" />
+      <workItem from="1411631294228" duration="642000" />
+      <workItem from="1411774942166" duration="6409000" />
+      <workItem from="1411804740964" duration="6478000" />
+      <workItem from="1411872081239" duration="8473000" />
+      <workItem from="1411910600266" duration="2644000" />
+      <workItem from="1411948134676" duration="1488000" />
+      <workItem from="1411959284620" duration="1020000" />
+      <workItem from="1411975919062" duration="2709000" />
+      <workItem from="1411993743936" duration="2058000" />
+      <workItem from="1412004917329" duration="627000" />
+      <workItem from="1412039205797" duration="2603000" />
+      <workItem from="1412072040312" duration="65000" />
+      <workItem from="1412072124890" duration="1456000" />
+      <workItem from="1412073586788" duration="4177000" />
+      <workItem from="1412127427902" duration="5952000" />
+      <workItem from="1412143275355" duration="2110000" />
+      <workItem from="1412150721495" duration="2133000" />
+      <workItem from="1412223387047" duration="188000" />
+      <workItem from="1412223764075" duration="6265000" />
+      <workItem from="1412234970185" duration="1171000" />
+      <workItem from="1412255881970" duration="624000" />
+      <workItem from="1412258938944" duration="925000" />
+      <workItem from="1412299838826" duration="1458000" />
+      <workItem from="1412357583398" duration="198000" />
+      <workItem from="1412398464933" duration="1675000" />
+      <workItem from="1412406926420" duration="1258000" />
+      <workItem from="1412475940336" duration="3086000" />
+      <workItem from="1412641989551" duration="10246000" />
+      <workItem from="1412670377565" duration="5176000" />
+      <workItem from="1412688373023" duration="4511000" />
+      <workItem from="1412732062000" duration="3442000" />
+      <workItem from="1412759437167" duration="11582000" />
+      <workItem from="1412818031991" duration="5070000" />
+      <workItem from="1412832995195" duration="338000" />
+      <workItem from="1412994778381" duration="5320000" />
+      <workItem from="1413000218987" duration="1611000" />
+      <workItem from="1413002218575" duration="2704000" />
+      <workItem from="1413005103087" duration="876000" />
+      <workItem from="1413008457518" duration="12020000" />
+      <workItem from="1413033189361" duration="3065000" />
+      <workItem from="1413076998895" duration="13395000" />
+      <workItem from="1413117702064" duration="4465000" />
+      <workItem from="1413122925492" duration="2213000" />
+      <workItem from="1413129262068" duration="2055000" />
+      <workItem from="1413161584288" duration="6080000" />
+      <workItem from="1413187342168" duration="66000" />
+      <workItem from="1413191927137" duration="3856000" />
+      <workItem from="1413204739614" duration="1288000" />
+      <workItem from="1413277189440" duration="4752000" />
+      <workItem from="1413339911559" duration="4446000" />
+      <workItem from="1413364034747" duration="843000" />
+      <workItem from="1413378779154" duration="579000" />
+      <workItem from="1413380631942" duration="2764000" />
+      <workItem from="1413421344475" duration="3317000" />
+      <workItem from="1413471609419" duration="714000" />
+      <workItem from="1413541161095" duration="941000" />
+      <workItem from="1413557091892" duration="735000" />
+      <workItem from="1413560571006" duration="1294000" />
+      <workItem from="1413591483934" duration="5584000" />
+      <workItem from="1413716212780" duration="3963000" />
+      <workItem from="1413736607131" duration="705000" />
+      <workItem from="1414286078356" duration="479000" />
+      <workItem from="1414286819286" duration="678000" />
+>>>>>>> New_Drug_Expert_System_beta_version
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="384238000" />
+=======
+    <option name="totallyTimeSpent" value="622822000" />
+>>>>>>> New_Drug_Expert_System_beta_version
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1626,7 +1788,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1634,23 +1796,29 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5748032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53543305" sideWeight="0.352123" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33070865" sideWeight="0.352123" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22834645" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2877013" sideWeight="0.1388102" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22547585" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2035139" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27818447" sideWeight="0.8611898" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4503937" sideWeight="0.64787704" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29062957" sideWeight="0.8611898" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41574803" sideWeight="0.64787704" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> New_Drug_Expert_System_beta_version
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4031496" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10682493" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42362204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1703,7 +1871,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1711,6 +1879,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminhtml/substanceIndexProp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
@@ -1819,11 +1988,313 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="646">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/User/Services/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1343">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/DFProperties/DFProperty.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="629">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Jess/JessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="1105">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/drugExpertSystem.ReformulateProduction.ReformulatedProduction">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>drugExpertSystem.ReformulateProduction.ReformulatedProduction</OriginalElement>
+          <nodes>
+            <node x="" y="">drugExpertSystem.Production.Production</node>
+            <node x="" y="">drugExpertSystem.ReformulateProduction.ReformulatedProduction</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="82.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/drugExpertSystem.InferenceEngine.InferenceEngineDirector">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>drugExpertSystem.InferenceEngine.InferenceEngineDirector</OriginalElement>
+          <nodes>
+            <node x="" y="">drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine</node>
+            <node x="" y="">drugExpertSystem.InferenceEngine.InferenceEngineDirector</node>
+            <node x="" y="">drugExpertSystem.InferenceEngine.InferenceEngineCreator</node>
+            <node x="" y="">drugExpertSystem.Production.Production</node>
+            <node x="" y="">org.springframework.stereotype.Service</node>
+            <node x="" y="">drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine</node>
+            <node x="" y="">drugExpertSystem.ReformulateProduction.ReformulatedProduction</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="80.0" y="41.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine</OriginalElement>
+          <nodes>
+            <node x="-17.0" y="79.0">drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine</node>
+            <node x="-186.5" y="-60.5">drugExpertSystem.InferenceEngine.InferenceEngineDirector</node>
+            <node x="21.0" y="-52.0">drugExpertSystem.InferenceEngine.InferenceEngineCreator</node>
+            <node x="-71.5" y="222.5">drugExpertSystem.Production.Production</node>
+            <node x="-185.5" y="90.5">drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine</node>
+            <node x="-389.5" y="93.5">drugExpertSystem.ReformulateProduction.ReformulatedProduction</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="drugExpertSystem.InferenceEngine.InferenceEngineDirector" target="drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.InferenceEngineDirector" target="drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.InferenceEngineDirector" target="drugExpertSystem.ReformulateProduction.ReformulatedProduction">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine" target="drugExpertSystem.InferenceEngine.InferenceEngineCreator">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine" target="drugExpertSystem.InferenceEngine.InferenceEngineCreator">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="drugExpertSystem.ReformulateProduction.ReformulatedProduction" target="drugExpertSystem.Production.Production">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.RuleBaseEngine.RulebaseEngine" target="drugExpertSystem.Production.Production">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="drugExpertSystem.InferenceEngine.CaseBaseReasoningEngine.CasebaseReasoningEngine" target="drugExpertSystem.Production.Production">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-160.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository</OriginalElement>
+          <nodes>
+            <node x="-223.5" y="28.0">drugExpertSystem.ReformulationHistory.ReformulationHistoryService</node>
+            <node x="108.00000000000003" y="0.0">org.springframework.data.repository.NoRepositoryBean</node>
+            <node x="-128.5" y="277.0">drugExpertSystem.ReformulationHistory.ReformulationHistory</node>
+            <node x="25.554166666666703" y="158.0">org.springframework.data.repository.PagingAndSortingRepository</node>
+            <node x="130.29166666666669" y="316.0">drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository</node>
+            <node x="0.0" y="0.0">org.springframework.data.repository.Repository</node>
+            <node x="-235.5" y="177.0">drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl</node>
+            <node x="15.5" y="79.0">org.springframework.data.repository.CrudRepository</node>
+            <node x="104.04166666666669" y="237.0">org.springframework.data.mongodb.repository.MongoRepository</node>
+            <node x="251.04166666666669" y="237.0">org.springframework.stereotype.Repository</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.NoRepositoryBean">
+              <point x="28.5" y="-14.5" />
+              <point x="101.0" y="54.0" />
+              <point x="129.66666666666669" y="54.0" />
+              <point x="-43.33333333333334" y="14.5" />
+            </edge>
+            <edge source="drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository" target="org.springframework.data.mongodb.repository.MongoRepository">
+              <point x="-50.5" y="-14.5" />
+              <point x="180.79166666666669" y="291.0" />
+              <point x="167.54166666666669" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework.data.mongodb.repository.MongoRepository" target="org.springframework.data.repository.PagingAndSortingRepository">
+              <point x="-31.75" y="-14.5" />
+              <point x="135.79166666666669" y="212.0" />
+              <point x="118.0541666666667" y="212.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository" target="org.springframework.stereotype.Repository">
+              <point x="50.5" y="-14.5" />
+              <point x="281.7916666666667" y="291.0" />
+              <point x="295.0416666666667" y="291.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework.data.repository.PagingAndSortingRepository" target="org.springframework.data.repository.NoRepositoryBean">
+              <point x="46.25" y="-14.5" />
+              <point x="164.3041666666667" y="133.0" />
+              <point x="168.3041666666667" y="133.0" />
+              <point x="168.3041666666667" y="54.0" />
+              <point x="173.00000000000003" y="54.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl" target="drugExpertSystem.ReformulationHistory.ReformulationHistoryService">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.Repository">
+              <point x="-28.5" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework.data.repository.PagingAndSortingRepository" target="org.springframework.data.repository.CrudRepository">
+              <point x="-46.25" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework.data.mongodb.repository.MongoRepository" target="org.springframework.data.repository.NoRepositoryBean">
+              <point x="31.75" y="-14.5" />
+              <point x="199.29166666666669" y="212.0" />
+              <point x="221.0541666666667" y="212.0" />
+              <point x="221.0541666666667" y="54.0" />
+              <point x="216.33333333333337" y="54.0" />
+              <point x="43.33333333333334" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-76.0" y="132.0" />
+          <SelectedNodes>
+            <node>drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">drugExpertSystem.ReformulationHistory.ReformulationHistoryService</node>
+            <node x="-194.5" y="-41.5">drugExpertSystem.ReformulationHistory.ReformulationHistory</node>
+            <node x="-245.5" y="80.5">drugExpertSystem.ReformulationHistory.ReformulationHistoryRepository</node>
+            <node x="61.0" y="79.0">drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl</node>
+            <node x="203.0" y="0.0">org.springframework.stereotype.Service</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl" target="drugExpertSystem.ReformulationHistory.ReformulationHistoryService">
+              <point x="-51.75" y="-14.5" />
+              <point x="112.75" y="54.0" />
+              <point x="91.5" y="54.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="drugExpertSystem.ReformulationHistory.ReformulationHistoryServiceImpl" target="org.springframework.stereotype.Service">
+              <point x="51.75" y="-14.5" />
+              <point x="216.25" y="54.0" />
+              <point x="237.5" y="54.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-110.0" y="14.0" />
+          <SelectedNodes>
+            <node>drugExpertSystem.ReformulationHistory.ReformulationHistory</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/DAO/SequeceNumber/SequenceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/DAO/SequeceNumber/SequenceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/DAO/SequeceNumber/SequenceDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="1088">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="357">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1343">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/FormulationControllers/FormulationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="612">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/repository/SubstanceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/BinderFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="612">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+>>>>>>> New_Drug_Expert_System_beta_version
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/DisintegrantFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="25109" max-vertical-offset="25279">
           <caret line="1477" column="0" selection-start-line="1477" selection-start-column="0" selection-end-line="1477" selection-end-column="0" />
         </state>
@@ -1847,30 +2318,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/TabletFormulation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Repository/FormulationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/SubstanceFunction/SubstanceFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="595">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/ExcipientRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/Excipient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/SubstanceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1292">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="714">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+>>>>>>> New_Drug_Expert_System_beta_version
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/InferenceEngineControllers/InferenceEngineController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="680">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/ExcipientRepository.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/InferenceEngineDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1003">
+          <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="663">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryRepository.java">
+>>>>>>> New_Drug_Expert_System_beta_version
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="9" column="99" selection-start-line="9" selection-start-column="99" selection-end-line="9" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulationHistory/ReformulationHistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="986">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="527">
@@ -2003,33 +2532,179 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2856">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/ReformulatedHistory/ReformulatedHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="935">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/substanceProperty/Solubility.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/ReformulateProduction/ReformulatedProduction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="595">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/controller/ExcipientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="833">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/InferenceEngineCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ProductionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1326">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Service/substanceService/SubstanceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Service/substanceService/SubstanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Services/FormulationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/Excipient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="765">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/services/ExcipientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Model/Substance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="1598">
+          <caret line="27" column="20" selection-start-line="15" selection-start-column="4" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/RuleBaseEngine/RulebaseEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="935">
+          <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Formulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="697">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/formulation/Services/FormulationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1105">
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/InferenceEngine/CaseBaseReasoningEngine/CasebaseReasoningEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="850">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/ActiveIngredientProperties/ActiveIngredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2261">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Production/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1122">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> New_Drug_Expert_System_beta_version
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/excipient/services/ExcipientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2006">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+>>>>>>> New_Drug_Expert_System_beta_version
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Entity/substanceProperty/DegradationMechanism.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1629" max-vertical-offset="2686">
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+>>>>>>> New_Drug_Expert_System_beta_version
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Service/substancePropertyService/DegradationMechanismServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+>>>>>>> New_Drug_Expert_System_beta_version
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/substance/Service/substancePropertyService/DegradationMechanismService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -2042,6 +2717,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21212122" vertical-offset="0" max-vertical-offset="561">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/drugExpertSystem/Filter/SimpleCORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="343">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> New_Drug_Expert_System_beta_version
           <folding />
         </state>
       </provider>
@@ -2056,7 +2747,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.15442279" />
                 <option value="0.5" />
               </list>
             </option>
@@ -2069,7 +2760,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.14727539" />
               </list>
             </option>
           </splitter-proportions>
@@ -2080,7 +2771,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.14727539" />
               </list>
             </option>
           </splitter-proportions>
@@ -2092,7 +2783,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.14727539" />
               </list>
             </option>
           </splitter-proportions>
@@ -2104,8 +2795,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.15442279" />
               </list>
             </option>
           </splitter-proportions>
@@ -2113,11 +2803,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <last-edited>jess</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.14727539" />
               </list>
             </option>
           </splitter-proportions>

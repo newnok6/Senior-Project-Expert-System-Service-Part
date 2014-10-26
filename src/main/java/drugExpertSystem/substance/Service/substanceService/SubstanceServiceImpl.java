@@ -1,7 +1,6 @@
 package drugExpertSystem.substance.Service.substanceService;
 
-import drugExpertSystem.substance.DAO.SequeceNumber.SequenceDao;
-import drugExpertSystem.substance.Entity.SubstancePackage.Substance;
+import drugExpertSystem.Model.Substance;
 import drugExpertSystem.substance.repository.SubstanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,16 +13,19 @@ import java.util.List;
  */
 @Service
 public class SubstanceServiceImpl implements SubstanceService {
+
     @Autowired
     SubstanceRepository substanceRepository;
 
-    @Autowired
-    SequenceDao sequenceDao;
+
+
+   // @Autowired
+    //SequenceDao sequenceDao;
 
     @Override
     @Transactional
     public Substance addsubstance(Substance substance) {
-        substance.setId(sequenceDao.getNextSequenceId("substance"));
+
         substanceRepository.save(substance);
         try{
             this.getSubstanceById(substance.getId());
@@ -36,6 +38,24 @@ public class SubstanceServiceImpl implements SubstanceService {
     @Override
     @Transactional
     public Substance updateSubstance(Substance substance) {
+
+        Substance substanceInDb = substanceRepository.findOne(substance.getId());
+        substanceInDb.setName(substance.getName());
+        substanceInDb.setWaterSolubility(substance.getWaterSolubility());
+        substanceInDb.setStability(substance.getStability());
+        substanceInDb.setPka(substance.getPka());
+        substanceInDb.setPartitionCoefficient(substance.getPartitionCoefficient());
+        substanceInDb.setSolidState(substance.getSolidState());
+        substanceInDb.setHygroscopicity(substance.getHygroscopicity());
+        substanceInDb.setParticleSize(substance.getParticleSize());
+        substanceInDb.setAlcoholSolubility(substance.getAlcoholSolubility());
+        substanceInDb.setFlowability(substance.getFlowability());
+        substanceInDb.setDensity(substance.getDensity());
+        substanceInDb.setSaltForm(substance.getSaltForm());
+        substanceInDb.setMocularWeight(substance.getMocularWeight());
+        substanceInDb.setIonicity(substance.getIonicity());
+
+
 
         substanceRepository.save(substance);
         try{
@@ -63,13 +83,11 @@ public class SubstanceServiceImpl implements SubstanceService {
 
     @Override
     @Transactional
-    public Substance getSubstanceById(long id) {
-        return substanceRepository.findById(id);
+    public Substance getSubstanceById(String  id) {
+        return substanceRepository.findOne(id);
     }
 
-    @Override
-    @Transactional
-    public Substance getSubstanceByName(String name) {
-        return substanceRepository.findByName(name);
-    }
+
+
+
 }

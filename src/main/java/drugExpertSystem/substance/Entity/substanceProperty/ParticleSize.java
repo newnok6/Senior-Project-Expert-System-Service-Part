@@ -1,56 +1,24 @@
 package drugExpertSystem.substance.Entity.substanceProperty;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+/**
+ * Created by Panupak on 8/9/2014.
+ */
 
-@Document
-public class ParticleSize {
-    @Id
-    long id;
-    String type;
-    float maximumparticlesize;
-    float minimalparticlesize;
-    float valueProperty;
+public enum ParticleSize {
+    PHARMACEUTICLENANO("PharmaceuticleNanoparticle"),
+    FINE("FineParticle"),
+    MICRONIZED("MicronizedParticle"),
+    NANOSIZE("NanosizeParticle"),
+    ULTRA_MICRONIZED("Ultra-micronizedParticle"),
+    VERYFINE("VeryFineParticle");
 
-    public float getMaximumparticlesize() {
-        return this.maximumparticlesize;
+    private String PaerticleSizeType;
+
+    ParticleSize(String paerticleSizeType) {
+        PaerticleSizeType = paerticleSizeType;
     }
 
-    public void setMaximumparticlesize(float maximumparticlesize) {
-
-        this.maximumparticlesize = maximumparticlesize;
-    }
-
-    public float getMinimalparticlesize() {
-        return this.minimalparticlesize;
-    }
-
-    public void setMinimalparticlesize(float minimalparticlesize) {
-
-        this.minimalparticlesize = minimalparticlesize;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public float getValueProperty() {
-        return valueProperty;
-    }
-
-    public void setValueProperty(float valueProperty) {
-        this.valueProperty = valueProperty;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
+    public String getPaerticleSizeType() {
+        return PaerticleSizeType;
     }
 }

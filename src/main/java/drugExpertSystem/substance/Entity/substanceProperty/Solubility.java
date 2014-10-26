@@ -1,9 +1,9 @@
 package drugExpertSystem.substance.Entity.substanceProperty;
 
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+public enum Solubility {
 
+<<<<<<< HEAD
 @Document
 public class Solubility {
     @Id
@@ -37,3 +37,27 @@ public class Solubility {
         this.value = value;
     }
 }
+=======
+    PRACTICALLY("PracticallyInsoluble"),
+    VERY("VerySoluble"),
+    SLIGHTLY("SlightlySoluble"),
+    SPARING("SparinglySoluble"),
+    Soluble("Soluble"),
+    VERYSLIGHTLY("VerySlightlySoluble"),
+    FREELY("FreelySoluble");
+
+    private String solubilityType;
+
+    private Solubility(String solubilityType) {
+        this.solubilityType = solubilityType;
+    }
+
+    public String getSolubilityType() {
+        return solubilityType;
+    }
+
+    public void setSolubilityType(String solubilityType) {
+        this.solubilityType = solubilityType;
+    }
+}
+>>>>>>> New_Drug_Expert_System_beta_version

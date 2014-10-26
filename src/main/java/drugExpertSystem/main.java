@@ -1,7 +1,17 @@
 package drugExpertSystem;
 
-import drugExpertSystem.substance.Entity.SubstanceFunction.Bider;
+/*
+import drugExpertSystem.substance.Entity.SubstanceFunction.BiderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
+import drugExpertSystem.Model.Substance;
+import drugExpertSystem.substance.Service.substanceService.SubstanceService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
+*/
+
+import drugExpertSystem.Jess.JessServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,14 +19,16 @@ import java.util.List;
 /**
  * Created by Panupak on 6/27/2014.
  */
+
 public class main {
     public static void main (String[] args ){
-        List<CompoundFunction> compoundFunctions = new ArrayList<CompoundFunction>();
-        Bider bider = new Bider(1,"Testing");
-        compoundFunctions.add(bider);
 
-        for(CompoundFunction compoundFunction : compoundFunctions){
-            System.out.println(compoundFunction.toString());
+        List<Integer> integers = new ArrayList<>();
+        integers.add(5);
+        integers.add(6);
+
+        for (Integer integer : integers){
+            System.out.println(integer);
         }
     }
 }

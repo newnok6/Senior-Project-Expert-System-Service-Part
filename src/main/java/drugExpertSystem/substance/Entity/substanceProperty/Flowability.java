@@ -1,31 +1,18 @@
 package drugExpertSystem.substance.Entity.substanceProperty;
 
+/**
+ * Created by Panupak on 8/9/2014.
+ */
+public enum Flowability {
+    A("A");
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+    private String flowabilityType;
 
-@Document
-public class Flowability {
-    @Id
-    long id;
-    String type;
-
-
-    public String getType() {
-        return type;
+    Flowability(String flowabilityType) {
+        this.flowabilityType = flowabilityType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public String getFlowabilityType() {
+        return flowabilityType;
     }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
 }
-
