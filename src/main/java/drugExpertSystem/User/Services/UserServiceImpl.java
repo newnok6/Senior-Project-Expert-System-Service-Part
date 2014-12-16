@@ -1,8 +1,10 @@
 package drugExpertSystem.User.Services;
 
 import drugExpertSystem.User.Repository.UserRepository;
+import drugExpertSystem.User.Token;
 import drugExpertSystem.User.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,7 +14,7 @@ import java.util.List;
  * Created by Panupak on 10/7/2014.
  */
 @Service
-public class UserServiceImpl implements UserService<User> {
+public class UserServiceImpl implements UserService<User>{
     @Autowired
     UserRepository userRepository;
 
@@ -30,19 +32,13 @@ public class UserServiceImpl implements UserService<User> {
 
     @Override
     @Transactional
-    public User updateUser(User user) {
+    public User updateUserPass(User user) {
 
-        try{
             User userfromDb = this.getUserById(user.getId());
             userfromDb.setPassword(user.getPassword());
-            userfromDb.setName(user.getName());
-            userfromDb.setAddress(user.getAddress());
-            userfromDb.setTelno(user.getTelno());
             userRepository.save(userfromDb);
 
-        }catch (Exception e){
-            return null;
-        }
+
         return user;
     }
 
@@ -80,4 +76,26 @@ public class UserServiceImpl implements UserService<User> {
     public User getUserById(String id) {
         return userRepository.findOne(id);
     }
+
+    @Override
+    public Token autherization(String email, String password) {
+        User user = new User();
+        Token token = new Token();
+        try{
+            user = userRepository.findByEmail(email);
+
+            if(user.getPassword().equals(password)){
+                token.setUser(user);
+                token.setToken(user.getId());
+                return token;
+            }
+        }catch (Exception e){
+            System.out.println("GG");
+            return null;
+
+        }
+        return token;
+    }
+
+
 }

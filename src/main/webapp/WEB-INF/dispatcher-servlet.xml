@@ -11,9 +11,11 @@
 
 
 
+
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
         <property name="resourceLoaderPath" value="/WEB-INF/views/"/>
     </bean>
+
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
         <property name="cache" value="true"/>
@@ -21,6 +23,10 @@
         <property name="suffix" value=".html"/>
         <property name="exposeSpringMacroHelpers" value="true"/>
     </bean>
+
+
+
+
 
 
 </beans>

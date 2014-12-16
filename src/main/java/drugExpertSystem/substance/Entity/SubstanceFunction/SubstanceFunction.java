@@ -5,9 +5,8 @@ package drugExpertSystem.substance.Entity.SubstanceFunction;
  */
 public class SubstanceFunction {
     String functionName;
-    String functionType;
-    double minWeight;
-    double maxWeight;
+    //String functionType;
+
 
     public String getFunctionName() {
         return functionName;
@@ -17,27 +16,13 @@ public class SubstanceFunction {
         this.functionName = functionName;
     }
 
-    public String getFunctionType() {
-        return functionType;
-    }
+//    public String getFunctionType() {
+//        return functionType;
+//    }
+//
+//    public void setFunctionType(String functionType) {
+//        this.functionType = functionType;
+//    }
 
-    public void setFunctionType(String functionType) {
-        this.functionType = functionType;
-    }
 
-    public double getMinWeight() {
-        return minWeight;
-    }
-
-    public void setMinWeight(double minWeight) {
-        this.minWeight = minWeight;
-    }
-
-    public double getMaxWeight() {
-        return maxWeight;
-    }
-
-    public void setMaxWeight(double maxWeight) {
-        this.maxWeight = maxWeight;
-    }
 }

@@ -1,6 +1,5 @@
 package drugExpertSystem.Jess;
 
-import drugExpertSystem.Model.Substance;
 import drugExpertSystem.excipient.ExcipientRepository;
 
 import drugExpertSystem.formulation.Repository.FormulationRepository;
@@ -17,6 +16,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 public class JessServiceImpl implements JessService {
+
+
     @Autowired
     SubstanceRepository substanceRepository;
     @Autowired
@@ -35,10 +36,11 @@ public class JessServiceImpl implements JessService {
         rete = new Rete();
 
         try {
+
             rete.reset();
 
             // Load Drug Expert System rule //
-            rete.batch("drugExpertRule.clp");
+            rete.batch("templateFromClass.clp");
             rete.addAll(substanceRepository.findAll());
             rete.addAll(excipientRepository.findAll());
             rete.addAll(formulationRepository.findAll());
@@ -48,9 +50,11 @@ public class JessServiceImpl implements JessService {
             rete.eval("(facts)");
            // rete.run();
            // rete.eval(("facts"));
+
         } catch (JessException e) {
             e.printStackTrace();
         }
+
     }
 
     @Override
@@ -58,4 +62,5 @@ public class JessServiceImpl implements JessService {
     public Rete getFact() {
         return null;
     }
+
 }

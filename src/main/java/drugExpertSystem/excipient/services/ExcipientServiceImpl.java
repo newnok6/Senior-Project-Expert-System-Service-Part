@@ -1,7 +1,7 @@
 package drugExpertSystem.excipient.services;
 
-import drugExpertSystem.Model.Excipient;
-import drugExpertSystem.Model.Substance;
+
+import drugExpertSystem.excipient.Excipient;
 import drugExpertSystem.excipient.ExcipientRepository;
 import drugExpertSystem.substance.Entity.SubstanceFunction.BinderFunction;
 import drugExpertSystem.substance.Entity.SubstanceFunction.DisintegrantFunction;
@@ -12,8 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -36,11 +34,12 @@ public class ExcipientServiceImpl implements ExcipientService {
     @Override
     @Transactional
     public Excipient addExcipient(Excipient excipient) {
-
-        for(SubstanceFunction substanceFunction : excipient.getSubstanceFunctions()){
-            this.setSubstanceFunction(substanceFunction);
-        }
-        excipient.setSubstanceFunctions(substanceFunctionList);
+//        substanceFunctionList = new ArrayList<>();
+//        for(SubstanceFunction substanceFunction : excipient.getSubstanceFunctions()){
+//            System.out.println(substanceFunction.getFunctionName());
+//            this.setSubstanceFunction(substanceFunction);
+//        }
+       // excipient.setSubstanceFunctions(substanceFunctionList);
         excipientRepository.save(excipient);
         try{
             this.getExcipientById(excipient.getId());
@@ -83,33 +82,31 @@ public class ExcipientServiceImpl implements ExcipientService {
         return excipientRepository.findOne(id);
     }
 
+    /*
     @Override
     @Transactional
     public void setSubstanceFunction(SubstanceFunction substanceFunction) {
-        substanceFunctionList = new ArrayList<>();
+
         String substanceFnName = substanceFunction.getFunctionName();
         switch (substanceFnName){
             case "binder" :
                 BinderFunction binderFunction = new BinderFunction();
                 binderFunction.setFunctionName(substanceFunction.getFunctionName());
-                binderFunction.setFunctionType(substanceFunction.getFunctionType());
-                binderFunction.setMaxWeight(substanceFunction.getMaxWeight());
-                binderFunction.setMinWeight(substanceFunction.getMinWeight());
                 substanceFunctionList.add(binderFunction);
+                System.out.println("test");
                 break;
             case "disintegrant" :
                 DisintegrantFunction disintegrantFunction = new DisintegrantFunction();
                 disintegrantFunction.setFunctionName(substanceFunction.getFunctionName());
-                disintegrantFunction.setFunctionType(substanceFunction.getFunctionType());
-                disintegrantFunction.setMaxWeight(substanceFunction.getMaxWeight());
-                disintegrantFunction.setMinWeight(substanceFunction.getMinWeight());
                 substanceFunctionList.add(disintegrantFunction);
+                System.out.println("test2");
                 break;
             default:
                 System.out.println("Can't find Substance Function Classes");
         }
 
     }
+    */
 
     @Override
     @Transactional

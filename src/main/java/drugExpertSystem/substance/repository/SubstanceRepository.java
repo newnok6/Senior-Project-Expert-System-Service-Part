@@ -1,6 +1,7 @@
 package drugExpertSystem.substance.repository;
 
-import drugExpertSystem.Model.Substance;
+
+import drugExpertSystem.substance.Substance;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

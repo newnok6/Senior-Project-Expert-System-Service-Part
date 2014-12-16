@@ -1,6 +1,6 @@
 package drugExpertSystem.ReformulationHistory;
 
-import drugExpertSystem.ReformulateProduction.ReformulatedProduction;
+import drugExpertSystem.ReformulatedProduction.ReformulatedProduction;
 import drugExpertSystem.User.User;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -50,4 +50,5 @@ public class ReformulationHistory {
     public void setUser(User user) {
         this.user = user;
     }
+
 }

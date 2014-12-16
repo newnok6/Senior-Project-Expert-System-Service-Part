@@ -9,21 +9,17 @@ import java.util.List;
  */
 
 public class DFProperty {
-    float totalweight;
+    double totalweight;
     int disgradationtime;
-    float hardness;
+    double hardness;
     List<Double> dissolutionProfile;
 
     public double getTotalweight() {
         return totalweight;
     }
 
-    public void setTotalweight(float totalweight) {
+    public void setTotalweight(double totalweight) {
         this.totalweight = totalweight;
-    }
-
-    public void setHardness(float hardness) {
-        this.hardness = hardness;
     }
 
     public int getDisgradationtime() {
@@ -38,6 +34,10 @@ public class DFProperty {
         return hardness;
     }
 
+    public void setHardness(double hardness) {
+        this.hardness = hardness;
+    }
+
     public List<Double> getDissolutionProfile() {
         return dissolutionProfile;
     }
@@ -45,5 +45,6 @@ public class DFProperty {
     public void setDissolutionProfile(List<Double> dissolutionProfile) {
         this.dissolutionProfile = dissolutionProfile;
     }
-
 }
+
+

@@ -23,6 +23,7 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
     <filter>
         <filter-name>simpleCORSFilter</filter-name>
         <filter-class>drugExpertSystem.Filter.SimpleCORSFilter</filter-class>

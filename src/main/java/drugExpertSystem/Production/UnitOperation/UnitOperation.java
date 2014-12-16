@@ -1,6 +1,9 @@
 package drugExpertSystem.Production.UnitOperation;
 
-import drugExpertSystem.Model.Excipient;
+
+
+import drugExpertSystem.excipient.Excipient;
+import org.springframework.data.annotation.Transient;
 
 import java.util.List;
 
@@ -10,6 +13,9 @@ import java.util.List;
 public class UnitOperation {
     String name;
     List<Excipient> excipients;
+
+    @Transient
+    private int sequence;
 
     public String getName() {
         return name;
@@ -25,5 +31,13 @@ public class UnitOperation {
 
     public void setExcipients(List<Excipient> excipients) {
         this.excipients = excipients;
+    }
+
+    public int getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(int sequence) {
+        this.sequence = sequence;
     }
 }

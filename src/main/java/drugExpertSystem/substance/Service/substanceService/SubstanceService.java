@@ -1,6 +1,8 @@
 package drugExpertSystem.substance.Service.substanceService;
 
-import drugExpertSystem.Model.Substance;
+
+
+import drugExpertSystem.substance.Substance;
 
 import java.util.List;
 

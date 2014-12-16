@@ -1,6 +1,7 @@
 package drugExpertSystem.controller;
 
-import drugExpertSystem.Model.Substance;
+
+import drugExpertSystem.substance.Substance;
 import drugExpertSystem.substance.Service.substanceService.SubstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -39,6 +40,10 @@ public class SubstanceController {
     public @ResponseBody List<Substance> getAllSubstance(){
         return substanceService.getAllSubstance();
     }
+
+
+
+
 
 
 

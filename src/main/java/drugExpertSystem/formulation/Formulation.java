@@ -1,7 +1,9 @@
 package drugExpertSystem.formulation;
 
-import drugExpertSystem.Model.Excipient;
+
+import drugExpertSystem.excipient.Excipient;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -12,10 +14,44 @@ import java.util.List;
 @Document
 public class Formulation {
     @Id
-    String id;
-    String name;
-    String type;
-    List<Excipient> excipient;
+    private String id;
+    private String name;
+    private String type;
+
+    private List<Excipient> excipient;
+    private Double totalWeight;
+
+    @Transient
+    private String source;
+
+    public Formulation() {
+
+    }
+
+    public Formulation(Double totalWeight, List<Excipient> excipient, String source, String type, String name, String id) {
+        this.totalWeight = totalWeight;
+        this.excipient = excipient;
+        this.source = source;
+        this.type = type;
+        this.name = name;
+        this.id = id;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public Double getTotalWeight() {
+        return totalWeight;
+    }
+
+    public void setTotalWeight(Double totalWeight) {
+        this.totalWeight = totalWeight;
+    }
 
     public String getId() {
         return id;

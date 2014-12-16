@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:mongo="http://www.springframework.org/schema/data/mongo"
-
+       xmlns:security="http://www.springframework.org/schema/security"
        xsi:schemaLocation=
                "http://www.springframework.org/schema/beans
              http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -13,7 +13,9 @@
              http://www.springframework.org/schema/mvc
              http://www.springframework.org/schema/mvc/spring-mvc.xsd
              http://www.springframework.org/schema/data/mongo
-             http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
+             http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+             http://www.springframework.org/schema/security
+             http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
 
     <!-- Activates various annotations to be detected in bean classes -->
@@ -28,15 +30,18 @@
 
 
 
+
     <!-- Configures the annotation-driven Spring MVC Controller programming model.
     Note that, with Spring 3.0, this tag works in Servlet MVC only!  -->
+
 
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
 
 
-    <mvc:annotation-driven />
 
+
+   <mvc:annotation-driven />
 
 
     <!--set the mongoDB location-->
@@ -52,16 +57,18 @@
         <constructor-arg name="databaseName" value="DrugOntology"/>
     </bean>
 
+
+
+
     <mongo:repositories base-package="drugExpertSystem">
-        <mongo:repository id="compoundFunctionRepository" mongo-template-ref="compoundFunctionTemplate"/>
         <mongo:repository id="substanceRepository" mongo-template-ref="substanceTemplate"/>
         <mongo:repository id="excipientRepository" mongo-template-ref="excipientTemplate"/>
         <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
-        <mongo:repository id="formulationRepository" mongo-template-ref="formulationTemplate"/>
         <mongo:repository id="productionRepository" mongo-template-ref="productionTemplate"/>
-        <mongo:repository id="reformulateProductionRepository" mongo-template-ref="reformulateProductionTemplate"/>
-        <mongo:repository id="reformulateProductionHistoryRepository" mongo-template-ref="reformulateHistoryProductionTemplate"/>
+        <mongo:repository id="reformulationHistoryRepository" mongo-template-ref="reformulationHistoryTemplate"/>
     </mongo:repositories>
+
+
 
 
 

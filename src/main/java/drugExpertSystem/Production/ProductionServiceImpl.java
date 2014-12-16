@@ -14,8 +14,6 @@ import java.util.List;
 
 public class ProductionServiceImpl implements ProductionService {
 
-
-
     @Autowired
     ProductionRepository productionRepository;
 
@@ -57,10 +55,7 @@ public class ProductionServiceImpl implements ProductionService {
     @Override
     @Transactional
     public List<Production> getAllProduction() {
-
             return productionRepository.findAll();
-
-
 
     }
 

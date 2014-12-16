@@ -10,11 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
     @Id
     String id;
-    String userName;
     String password;
-    String name;
-    String address;
-    String telno;
     String email;
     String type;
 
@@ -25,46 +21,6 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getTelno() {
-        return telno;
-    }
-
-    public void setTelno(String telno) {
-        this.telno = telno;
     }
 
     public String getEmail() {
@@ -81,5 +37,13 @@ public class User {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

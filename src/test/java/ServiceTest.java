@@ -1,4 +1,4 @@
-//import drugExpertSystem.Model.TabletFormulation;
+//import drugExpertSystem.drugExpertSystem.Model.TabletFormulation;
 //import drugExpertSystem.substance.Entity.SubstanceFunction.CompoundFunction;
 //import drugExpertSystem.substance.Service.substanceFunctionService.CompoundFunctionServiceImpl;
 //import drugExpertSystem.substance.Service.substancePropertyService.*;

@@ -1,6 +1,7 @@
 package drugExpertSystem.substance.Service.substanceService;
 
-import drugExpertSystem.Model.Substance;
+
+import drugExpertSystem.substance.Substance;
 import drugExpertSystem.substance.repository.SubstanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

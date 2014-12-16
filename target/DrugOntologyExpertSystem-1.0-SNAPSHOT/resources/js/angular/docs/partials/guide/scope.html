@@ -26,7 +26,7 @@ example <code>{{username}}</code> expression is meaningless, unless it is evalua
 scope which defines the <code>username</code> property.</p>
 </li>
 </ul>
-<h2 id="scope-as-data-model">Scope as Data-Model</h2>
+<h2 id="scope-as-data-model">Scope as Data-drugExpertSystem.Model</h2>
 <p>Scope is the glue between application controller and the view. During the template <a href="guide/compiler">linking</a> phase the <a href="api/ng/provider/$compileProvider#directive">directives</a> set up
 <a href="api/ng/type/$rootScope.Scope#$watch"><code>$watch</code></a> expressions on the scope. The
 <code>$watch</code> allows the directives to be notified of property changes, which allows the directive to
@@ -233,7 +233,7 @@ linking, some directives create new child scopes.</p>
 <p>During template linking directives register <a href="api/ng/type/$rootScope.Scope#$watch">watches</a> on the scope. These watches will be
 used to propagate model values to the DOM.</p>
 </li>
-<li><p><strong>Model mutation</strong></p>
+<li><p><strong>drugExpertSystem.Model mutation</strong></p>
 <p>For mutations to be properly observed, you should make them only within the <a href="api/ng/type/$rootScope.Scope#$apply">scope.$apply()</a>. (Angular APIs do this
 implicitly, so no extra <code>$apply</code> call is needed when doing synchronous work in controllers,
 or asynchronous work with <a href="api/ng/service/$http">$http</a>, <a href="api/ng/service/$timeout">$timeout</a>

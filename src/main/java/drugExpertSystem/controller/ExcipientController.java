@@ -1,7 +1,7 @@
 package drugExpertSystem.controller;
 
-import drugExpertSystem.Model.Excipient;
-import drugExpertSystem.Model.Substance;
+
+import drugExpertSystem.excipient.Excipient;
 import drugExpertSystem.excipient.services.ExcipientService;
 import drugExpertSystem.substance.Entity.SubstanceFunction.SubstanceFunction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +22,6 @@ public class ExcipientController {
     @RequestMapping(value = "/add-excipient",method = RequestMethod.POST)
     public void addExcipient(@RequestBody Excipient excipient){
         excipientService.addExcipient(excipient);
-        for(SubstanceFunction substanceFunction : excipient.getSubstanceFunctions()){
-            System.out.println(substanceFunction.getMaxWeight());
-            System.out.println(substanceFunction.getMinWeight());
-        }
         System.out.println("Excipient adding sucessful");
     }
 

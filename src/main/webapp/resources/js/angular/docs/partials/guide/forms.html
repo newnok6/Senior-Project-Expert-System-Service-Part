@@ -167,7 +167,7 @@ in <code>debounce</code>. This can be useful to force immediate updates on some 
 <p>I.e. <code>ng-model-options=&quot;{ updateOn: &#39;default blur&#39;, debounce: { default: 500, blur: 0 } }&quot;</code></p>
 <p>If those attributes are added to an element, they will be applied to all the child elements and controls that inherit from it unless they are
 overridden.</p>
-<p>This example shows how to debounce model changes. Model will be updated only 250 milliseconds after last change.</p>
+<p>This example shows how to debounce model changes. drugExpertSystem.Model will be updated only 250 milliseconds after last change.</p>
 <p>
 
 <div>
@@ -205,10 +205,10 @@ types: (<a href="api/ng/input/input[text]">text</a>, <a href="api/ng/input/input
 To get a hold of the controller the directive specifies a dependency as shown in the example below.
 The validation can occur in two places:</p>
 <ul>
-<li><p><strong>Model to View update</strong> -
+<li><p><strong>drugExpertSystem.Model to View update</strong> -
 Whenever the bound model changes, all functions in <a href="api/ng/type/ngModel.NgModelController#properties_$formatters">NgModelController#$formatters</a> array are pipe-lined, so that each of these functions has an opportunity to format the value and change validity state of the form control through <a href="api/ng/method/$setValidity">NgModelController#$setValidity</a>.</p>
 </li>
-<li><p><strong>View to Model update</strong> -
+<li><p><strong>View to drugExpertSystem.Model update</strong> -
 In a similar way, whenever a user interacts with a control it calls <a href="api/ng/method/$setViewValue">NgModelController#$setViewValue</a>.
 This in turn pipelines all functions in the <a href="api/ng/type/ngModel.NgModelController#properties_$parsers">NgModelController#$parsers</a> array, so that each of these functions has an opportunity to convert the value and change validity state of the form control through <a href="api/ng/method/$setValidity">NgModelController#$setValidity</a>.</p>
 </li>
